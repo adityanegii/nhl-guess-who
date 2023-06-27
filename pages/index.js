@@ -13,7 +13,7 @@ export default function Home() {
       </Head>
 
       <section>
-        <h1>NHL games</h1>
+        <a style={{margin: "10px"}} href='/'><img src='home.svg' alt='home button' height='50px'/></a>
       </section>
 
       <section className= {styles.container}>

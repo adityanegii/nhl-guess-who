@@ -1,7 +1,7 @@
 .container {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 2fr 3fr;
+    grid-template-columns: 4fr 2fr 1fr;
+    grid-template-rows: 3fr 2fr 1fr;
     height:100vh;
 }
 
@@ -10,6 +10,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.playerInfo {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -22,12 +29,12 @@
     padding: 10px;
 }
 
-
 .dropdownContainer {
     height: 300px;
     overflow: auto;
     scrollbar-width: thin;
 }
+
 
 .dropdownContainer::-webkit-scrollbar {
     width: 5px; /* Set the width of the scrollbar */
@@ -57,58 +64,23 @@
     cursor: pointer;
 }
 
-.guesses {
-    grid-area: 2 / 2 / 3 / 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.guesses table {
+.playerInfo table {
     border-collapse: collapse;
-    width: 100%;
 }
 
-.guesses th, .guesses td {
+.playerInfo th, .playerInfo td {
     border: 1px solid #ddd;
     padding: 8px;
 }
 
-.guesses tr:nth-child(even){background-color: #f2f2f2;}
+.playerInfo tr:nth-child(even){background-color: #f2f2f2;}
 
-.guesses tr:hover {background-color: #ddd;}
+.playerInfo tr:hover {background-color: #ddd;}
 
-.guesses th {
+.playerInfo th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
     background-color: blue;
     color: white;
-}
-
-.teamEntry {
-    display: flex;
-    align-items: center;
-}
-
-.correctCell {
-    background-color: #04AA6D;
-    color: white;
-}
-
-.incorrectCell {
-    background-color: #f44336;
-    color: white;
-}
-
-.closeCell {
-    background-color: yellowgreen;
-}
-
-.numberCell {
-    display:flex;
-    align-items: center;
-}
-.numberCell img {
-    margin-right: 10px;
 }

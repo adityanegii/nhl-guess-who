@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../styles/GuessWhoPopUp.module.css'
 
-export default function GuessWhoPopUp({props, playerInfo}) {
+export default function EndGamePopUp({props, playerInfo, page}) {
     if (!props) {
         return (
             <div className={styles.popup}>
@@ -12,7 +12,7 @@ export default function GuessWhoPopUp({props, playerInfo}) {
             <h3>{playerInfo.name} was the answer!</h3>
             <div>
                 <a href="/"><img src="return.svg" alt="return button" height="40px" /></a>
-                <a href="/guessWho"><img src='reload.svg' alt='reload button' height="40px" /></a>
+                <a href={page}><img src='reload.svg' alt='reload button' height="40px" /></a>
             </div>
             </div>
         );
