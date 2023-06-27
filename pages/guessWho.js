@@ -165,15 +165,22 @@ export default function GuessWho() {
                   <tr key={index}>
                     <td className={player.name === playerInfo.name ? styles.correctCell : styles.incorrectCell}>{player.name}</td>
                     <td className={player.team === playerInfo.team ? styles.correctCell : styles.incorrectCell}>
-                      <div className={styles.teamEntry}>
+                      <div className={styles.entryImg}>
                         <img
                         src={`https://www-league.nhlstatic.com/images/logos/teams-current-primary-light/${player.teamId}.svg`}
                         alt="Player Team logo"
-                        height="25px"/>
+                        height="30px"/>
                         {player.team}
                       </div>
                     </td>
-                    <td className={player.division === playerInfo.division ? styles.correctCell : styles.incorrectCell}>{player.division}</td>
+                    <td className={player.division === playerInfo.division ? styles.correctCell : styles.incorrectCell}>
+                      <div className={styles.entryImg}>
+                        <img src={`/${player.division}.png`}   
+                        alt = "Player Division"
+                        height="30px"/>
+                        {player.division}
+                      </div>
+                    </td>
                     <td className={player.nationality === playerInfo.nationality ? styles.correctCell : styles.incorrectCell}>{player.nationality}</td>
                     <td className={Math.abs(player.number - playerInfo.number) > 7 ? styles.incorrectCell : (player.number == playerInfo.number ? styles.correctCell : styles.closeCell)}>
                       <div className={styles.numberCell}>

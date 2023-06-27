@@ -1,5 +1,3 @@
-
-
 export const fetchPlayerIds = async () => {
     const response = await fetch("https://statsapi.web.nhl.com/api/v1/teams/");
     const data = await response.json();
@@ -42,9 +40,7 @@ export async function getRandomPlayerTeams(playerIDs) {
         season: season.season,
         team: season.team.name,
         league: season.league.name,
-        pointTotal: season.stat.points,
-        assistsTotal: season.stat.assists,
-        goalsTotal: season.stat.goals
+        gamesTotal: season.stat.games
         }));
 
         // Turn object into array of JSON objects
@@ -119,7 +115,7 @@ export async function getRandomPlayerTeams(playerIDs) {
 const aggregateTeamTotals = playerData => {
     const aggregatedData = [];
     let team = null;
-
+    
     for (const entry of playerData) {
         // If first entry
         if (team === null) {
@@ -129,9 +125,7 @@ const aggregateTeamTotals = playerData => {
             // If the team is the same, add the totals
             if (team.value.team === entry.value.team && team.value.league === entry.value.league) {
                 team.value.endYear = entry.value.endYear;
-                team.value.pointTotal += entry.value.pointTotal;
-                team.value.goalsTotal += entry.value.goalsTotal;
-                team.value.assistsTotal += entry.value.assistsTotal;
+                team.value.gamesTotal += entry.value.gamesTotal;
             }
             // If different team, push the aggregated data and reset the team 
             else {

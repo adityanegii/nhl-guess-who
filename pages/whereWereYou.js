@@ -14,6 +14,7 @@ export default function WhereWereYou() {
   const [playerNames, setPlayerNames] = useState([]);
   const [playerInfo, setPlayerInfo] = useState([]); // Player to guess 
 
+  const [guesses, setGuesses] = useState([]); // [id, name, teamId], List of guessed players
   const [maxGuesses, setMaxGuesses] = useState(1); // Max number of guesses (different teams played for)
 
   const [filteredPlayers, setFilteredPlayers] = useState([]); // Players to show in dropdown
@@ -59,9 +60,11 @@ export default function WhereWereYou() {
 
   const handleClick = (player) => {
     setInterimGuess('');
+    getGuessInfo(player.id).then((guessInfo) => {
+      setGuesses((prevGuesses) => [...prevGuesses, guessInfo]);
+    })
     if (player.id === playerInfo.playerId ) {
       setWon(true);
-
       var duration = 15 * 500;
       var animationEnd = Date.now() + duration;
       var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
@@ -152,40 +155,69 @@ export default function WhereWereYou() {
                   ))}
                 </div>
               </div>
+
+              <div>
+                <table>
+                  <tbody>
+                    {
+                      guesses.map((guess, index) => (
+                        <tr key={index}>
+                          {console.log(guess.division)}
+                          <td>
+                            <img src={`/${guess.division}.png`} 
+                            alt = "Player Division"
+                            height="70px"/>
+                          </td>
+                          <td>
+                            <img
+                            src={`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${guess.playerId}@2x.png`}
+                            alt="Player Headshot"
+                            height="70px"/>
+                          </td>
+                          <td>
+                            <img
+                            src={`https://www-league.nhlstatic.com/images/logos/teams-current-primary-light/${guess.teamId}.svg`}
+                            alt="Player Team logo"
+                            height="70px"
+                            />
+                          </td>
+                        </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
           }
           {(numGuesses == maxGuesses || won==true) && <EndGamePopUp props={won} playerInfo={playerInfo} page="whereWereYou"/>}
           </div>  
           
+          {playerInfo.position != 'G' && 
           <div className={styles.playerInfo}>
-            <table>
-              <thead>
-                <tr>
-                    <th>Season</th>
-                    <th>Team</th>
-                    <th>League</th>
-                    <th>Goals</th>
-                    <th>Assists</th>
-                    <th>Points</th>
+          <table>
+            <thead>
+              <tr>
+                  <th>Season</th>
+                  <th>Team</th>
+                  <th>League</th>
+                  <th>Games</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+              { 
+                seasonsToShow.map((season, index) => (
+                  <tr key={index}>
+                    <td>{season.startYear}-{season.endYear}</td>
+                    <td>{season.team}</td>
+                    <td>{season.league}</td>
+                    <td>{season.gamesTotal}</td>
                   </tr>
-              </thead>
-              
-              <tbody>
-                { 
-                  seasonsToShow.map((season, index) => (
-                    <tr key={index}>
-                      <td>{season.startYear}-{season.endYear}</td>
-                      <td>{season.team}</td>
-                      <td>{season.league}</td>
-                      <td>{season.goalsTotal}</td>
-                      <td>{season.pointTotal - season.goalsTotal}</td>
-                      <td>{season.pointTotal}</td>
-                    </tr>
-                  ))
-                }
-              </tbody>
-            </table>
-          </div>
+                ))
+              }
+            </tbody>
+          </table>
+        </div>
+          }
       </section>
     </div>
   )
