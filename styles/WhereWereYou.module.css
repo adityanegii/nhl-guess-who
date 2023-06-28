@@ -103,3 +103,11 @@
     background-color: blue;
     color: white;
 }
+
+.incorrectCell {
+    background-color: #f44336;
+}
+
+.correctCell {
+    background-color: #04AA6D;
+}

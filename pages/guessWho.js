@@ -174,7 +174,7 @@ export default function GuessWho({players}) {
               <tbody>
                 {guesses.map((player, index) => (
                   <tr key={index}>
-                    <td className={player.name === playerInfo.name ? styles.correctCell : styles.incorrectCell}>{player.name}</td>
+                    <td className={player.id === playerInfo.playerId ? styles.correctCell : styles.incorrectCell}>{player.name}</td>
                     <td className={player.team === playerInfo.team ? styles.correctCell : styles.incorrectCell}>
                       <div className={styles.entryImg}>
                         <img

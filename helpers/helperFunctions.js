@@ -33,6 +33,7 @@ export async function getRandomPlayerTeams(playerIDs) {
         const randomIndex = Math.floor(Math.random() * pIds.length);
         const randomPlayer = await pIds[randomIndex];
         // const randomPlayer = 8470604;        // Jeff Carter
+        // const randomPlayer = 8473541;        // Jonathan Bernier
         const response = await fetch("https://statsapi.web.nhl.com/api/v1/people/" + randomPlayer + "/stats?stats=yearByYear");
         const data = await response.json();
         let info = data.stats[0].splits;
@@ -42,7 +43,10 @@ export async function getRandomPlayerTeams(playerIDs) {
         season: season.season,
         team: season.team.name,
         league: season.league.name,
-        gamesTotal: season.stat.games
+        gamesTotal: season.stat.games,
+        points: season.stat.points,
+        sA: season.stat.shotsAgainst,
+        gA: season.stat.goalsAgainst,
         }));
 
         // Turn object into array of JSON objects
@@ -128,6 +132,9 @@ const aggregateTeamTotals = playerData => {
             if (team.value.team === entry.value.team && team.value.league === entry.value.league) {
                 team.value.endYear = entry.value.endYear;
                 team.value.gamesTotal += entry.value.gamesTotal;
+                team.value.points += entry.value.points;
+                team.value.sA += entry.value.sA;
+                team.value.gA += entry.value.gA;
             }
             // If different team, push the aggregated data and reset the team 
             else {
@@ -138,7 +145,6 @@ const aggregateTeamTotals = playerData => {
     }
 
     aggregatedData.push(team.value);
-
     return aggregatedData;
 }
 

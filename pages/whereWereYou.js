@@ -98,7 +98,6 @@ export default function WhereWereYou() {
     } else {
       setNumGuesses(numGuesses + 1);
     }
-    console.log(numGuesses);
   };
   
   const highlightMatchingText = (text, query) => {
@@ -158,7 +157,6 @@ export default function WhereWereYou() {
                         alt="Player Team logo"
                         height="25px"
                         />
-                      {/* {player.name} */}
                       {highlightMatchingText(player.name, interimGuess)}
                     </div>
                   ))}
@@ -169,23 +167,22 @@ export default function WhereWereYou() {
                 <table>
                   <tbody>
                     {
-                      guesses.map((guess, index) => (
+                      guesses.map((player, index) => (
                         <tr key={index}>
-                          {console.log(guess.division)}
-                          <td className={styles.item}>
-                            <img src={`/${guess.division}.png`} 
-                            alt = "Player Division"
-                            height="70px"/>
-                          </td>
-                          <td className={styles.item}>
+                          <td className={player.id === playerInfo.playerId ? styles.correctCell : styles.incorrectCell}>
                             <img
-                            src={`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${guess.playerId}@2x.png`}
+                            src={`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${player.playerId}@2x.png`}
                             alt="Player Headshot"
                             height="70px"/>
                           </td>
-                          <td className={styles.item}>
+                          <td className={player.division === playerInfo.division ? styles.correctCell : styles.incorrectCell}>
+                            <img src={`/${player.division}.png`} 
+                            alt = "Player Division"
+                            height="70px"/>
+                          </td>
+                          <td className={player.team === playerInfo.team ? styles.correctCell : styles.incorrectCell}>
                             <img
-                            src={`https://www-league.nhlstatic.com/images/logos/teams-current-primary-light/${guess.teamId}.svg`}
+                            src={`https://www-league.nhlstatic.com/images/logos/teams-current-primary-light/${player.teamId}.svg`}
                             alt="Player Team logo"
                             height="70px"
                             />
@@ -200,7 +197,6 @@ export default function WhereWereYou() {
           {(numGuesses == maxGuesses || won==true) && <EndGamePopUp props={won} playerInfo={playerInfo} page="whereWereYou"/>}
           </div>  
           
-          {playerInfo.position != 'G' && 
           <div className={styles.playerInfo}>
           <table>
             <thead>
@@ -209,6 +205,11 @@ export default function WhereWereYou() {
                   <th>Team</th>
                   <th>League</th>
                   <th>Games</th>
+                  {
+                      playerInfo.position === "G" ? 
+                      <th>SV%</th> :
+                      <th>Points</th>
+                    }
                 </tr>
             </thead>
             
@@ -220,13 +221,17 @@ export default function WhereWereYou() {
                     <td>{season.team}</td>
                     <td>{season.league}</td>
                     <td>{season.gamesTotal}</td>
+                    {
+                      playerInfo.position === "G" ? 
+                      <td>{1-(season.gA/season.sA).toFixed(3)}</td> :
+                      <td>{season.points}</td>
+                    }
                   </tr>
                 ))
               }
             </tbody>
           </table>
         </div>
-          }
       </section>
     </div>
   )
