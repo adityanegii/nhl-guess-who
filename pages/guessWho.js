@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import styles from '../styles/GuessWho.module.css'
-import { fetchPlayerIds, getRandomPlayerTeams, getGuessInfo } from './api/helperFunctions'
+import { fetchPlayerIds, getRandomPlayerTeams, getGuessInfo } from '../helpers/helperFunctions'
 import { useEffect, useState } from 'react'
 import EndGamePopUp from '../components/EndGamePopUp'
 
 import Script from 'next/script'
 
-export default function GuessWho() {
+export default function GuessWho({players}) {
   
   const [playerData, setPlayerData] = useState([]); // [id, name, teamId]
   const [playerIds, setPlayerIds] = useState([]);
@@ -24,11 +24,22 @@ export default function GuessWho() {
 
 
   useEffect(() => {
-    fetchPlayerIds().then((res) => {
-      setPlayerData(res);
-      setPlayerIds(res.map((player) => player.id));
-      setPlayerNames(res.map((player) => player.name));
-    })
+    fetch('/api/staticData')
+    .then(response => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error('Error: ' + response.status);
+        }
+      })
+      .then(data => {
+        setPlayerData(data);
+        setPlayerIds(data.map((player) => player.id));
+        setPlayerNames(data.map((player) => player.name));
+      })
+      .catch(error => {
+        console.error(error); // Handle any errors
+      });
   }, []);
 
   useEffect(() => {

@@ -1,0 +1,4312 @@
+[
+    {
+        "name": "Jonathan Bernier",
+        "id": 8473541,
+        "teamId": 1
+    },
+    {
+        "name": "Brendan Smith",
+        "id": 8474090,
+        "teamId": 1
+    },
+    {
+        "name": "Tomas Tatar",
+        "id": 8475193,
+        "teamId": 1
+    },
+    {
+        "name": "Erik Haula",
+        "id": 8475287,
+        "teamId": 1
+    },
+    {
+        "name": "Tyler Toffoli",
+        "id": 8475726,
+        "teamId": 1
+    },
+    {
+        "name": "Ondrej Palat",
+        "id": 8476292,
+        "teamId": 1
+    },
+    {
+        "name": "Dougie Hamilton",
+        "id": 8476462,
+        "teamId": 1
+    },
+    {
+        "name": "Miles Wood",
+        "id": 8477425,
+        "teamId": 1
+    },
+    {
+        "name": "Ryan Graves",
+        "id": 8477435,
+        "teamId": 1
+    },
+    {
+        "name": "Curtis Lazar",
+        "id": 8477508,
+        "teamId": 1
+    },
+    {
+        "name": "Vitek Vanecek",
+        "id": 8477970,
+        "teamId": 1
+    },
+    {
+        "name": "Jonas Siegenthaler",
+        "id": 8478399,
+        "teamId": 1
+    },
+    {
+        "name": "Timo Meier",
+        "id": 8478414,
+        "teamId": 1
+    },
+    {
+        "name": "John Marino",
+        "id": 8478507,
+        "teamId": 1
+    },
+    {
+        "name": "Jesper Bratt",
+        "id": 8479407,
+        "teamId": 1
+    },
+    {
+        "name": "Nathan Bastian",
+        "id": 8479414,
+        "teamId": 1
+    },
+    {
+        "name": "Michael McLeod",
+        "id": 8479415,
+        "teamId": 1
+    },
+    {
+        "name": "Nico Hischier",
+        "id": 8480002,
+        "teamId": 1
+    },
+    {
+        "name": "Jesper Boqvist",
+        "id": 8480003,
+        "teamId": 1
+    },
+    {
+        "name": "Kevin Bahl",
+        "id": 8480860,
+        "teamId": 1
+    },
+    {
+        "name": "Akira Schmid",
+        "id": 8481033,
+        "teamId": 1
+    },
+    {
+        "name": "Nolan Foote",
+        "id": 8481518,
+        "teamId": 1
+    },
+    {
+        "name": "Jack Hughes",
+        "id": 8481559,
+        "teamId": 1
+    },
+    {
+        "name": "Tyce Thompson",
+        "id": 8481740,
+        "teamId": 1
+    },
+    {
+        "name": "Nico Daws",
+        "id": 8482076,
+        "teamId": 1
+    },
+    {
+        "name": "Dawson Mercer",
+        "id": 8482110,
+        "teamId": 1
+    },
+    {
+        "name": "Alexander Holtz",
+        "id": 8482125,
+        "teamId": 1
+    },
+    {
+        "name": "Luke Hughes",
+        "id": 8482684,
+        "teamId": 1
+    },
+    {
+        "name": "Topias Vilen",
+        "id": 8482873,
+        "teamId": 1
+    },
+    {
+        "name": "Simon Nemec",
+        "id": 8483495,
+        "teamId": 1
+    },
+    {
+        "name": "Brian Halonen",
+        "id": 8483531,
+        "teamId": 1
+    },
+    {
+        "name": "Oliver Wahlstrom",
+        "id": 8480789,
+        "teamId": 2
+    },
+    {
+        "name": "Zach Parise",
+        "id": 8470610,
+        "teamId": 2
+    },
+    {
+        "name": "Cal Clutterbuck",
+        "id": 8473504,
+        "teamId": 2
+    },
+    {
+        "name": "Semyon Varlamov",
+        "id": 8473575,
+        "teamId": 2
+    },
+    {
+        "name": "Josh Bailey",
+        "id": 8474573,
+        "teamId": 2
+    },
+    {
+        "name": "Matt Martin",
+        "id": 8474709,
+        "teamId": 2
+    },
+    {
+        "name": "Kyle Palmieri",
+        "id": 8475151,
+        "teamId": 2
+    },
+    {
+        "name": "Casey Cizikas",
+        "id": 8475231,
+        "teamId": 2
+    },
+    {
+        "name": "Anders Lee",
+        "id": 8475314,
+        "teamId": 2
+    },
+    {
+        "name": "Brock Nelson",
+        "id": 8475754,
+        "teamId": 2
+    },
+    {
+        "name": "Jean-Gabriel Pageau",
+        "id": 8476419,
+        "teamId": 2
+    },
+    {
+        "name": "Scott Mayfield",
+        "id": 8476429,
+        "teamId": 2
+    },
+    {
+        "name": "Adam Pelech",
+        "id": 8476917,
+        "teamId": 2
+    },
+    {
+        "name": "Hudson Fasching",
+        "id": 8477392,
+        "teamId": 2
+    },
+    {
+        "name": "Bo Horvat",
+        "id": 8477500,
+        "teamId": 2
+    },
+    {
+        "name": "Ryan Pulock",
+        "id": 8477506,
+        "teamId": 2
+    },
+    {
+        "name": "Ross Johnston",
+        "id": 8477527,
+        "teamId": 2
+    },
+    {
+        "name": "Ilya Sorokin",
+        "id": 8478009,
+        "teamId": 2
+    },
+    {
+        "name": "Pierre Engvall",
+        "id": 8478115,
+        "teamId": 2
+    },
+    {
+        "name": "Mathew Barzal",
+        "id": 8478445,
+        "teamId": 2
+    },
+    {
+        "name": "Parker Wotherspoon",
+        "id": 8478450,
+        "teamId": 2
+    },
+    {
+        "name": "Sebastian Aho",
+        "id": 8480222,
+        "teamId": 2
+    },
+    {
+        "name": "Jakub Skarek",
+        "id": 8480819,
+        "teamId": 2
+    },
+    {
+        "name": "Noah Dobson",
+        "id": 8480865,
+        "teamId": 2
+    },
+    {
+        "name": "Alexander Romanov",
+        "id": 8481014,
+        "teamId": 2
+    },
+    {
+        "name": "Samuel Bolduc",
+        "id": 8481541,
+        "teamId": 2
+    },
+    {
+        "name": "Simon Holmstrom",
+        "id": 8481601,
+        "teamId": 2
+    },
+    {
+        "name": "Jaroslav Halak",
+        "id": 8470860,
+        "teamId": 3
+    },
+    {
+        "name": "Patrick Kane",
+        "id": 8474141,
+        "teamId": 3
+    },
+    {
+        "name": "Chris Kreider",
+        "id": 8475184,
+        "teamId": 3
+    },
+    {
+        "name": "Vladimir Tarasenko",
+        "id": 8475765,
+        "teamId": 3
+    },
+    {
+        "name": "Vincent Trocheck",
+        "id": 8476389,
+        "teamId": 3
+    },
+    {
+        "name": "Mika Zibanejad",
+        "id": 8476459,
+        "teamId": 3
+    },
+    {
+        "name": "Barclay Goodrow",
+        "id": 8476624,
+        "teamId": 3
+    },
+    {
+        "name": "Jacob Trouba",
+        "id": 8476885,
+        "teamId": 3
+    },
+    {
+        "name": "Jimmy Vesey",
+        "id": 8476918,
+        "teamId": 3
+    },
+    {
+        "name": "Tyler Motte",
+        "id": 8477353,
+        "teamId": 3
+    },
+    {
+        "name": "Ben Harpur",
+        "id": 8477433,
+        "teamId": 3
+    },
+    {
+        "name": "Igor Shesterkin",
+        "id": 8478048,
+        "teamId": 3
+    },
+    {
+        "name": "Artemi Panarin",
+        "id": 8478550,
+        "teamId": 3
+    },
+    {
+        "name": "Niko Mikkola",
+        "id": 8478859,
+        "teamId": 3
+    },
+    {
+        "name": "Adam Fox",
+        "id": 8479323,
+        "teamId": 3
+    },
+    {
+        "name": "Ryan Lindgren",
+        "id": 8479324,
+        "teamId": 3
+    },
+    {
+        "name": "Filip Chytil",
+        "id": 8480078,
+        "teamId": 3
+    },
+    {
+        "name": "K'Andre Miller",
+        "id": 8480817,
+        "teamId": 3
+    },
+    {
+        "name": "Kaapo Kakko",
+        "id": 8481554,
+        "teamId": 3
+    },
+    {
+        "name": "Braden Schneider",
+        "id": 8482073,
+        "teamId": 3
+    },
+    {
+        "name": "Alexis Lafrenière",
+        "id": 8482109,
+        "teamId": 3
+    },
+    {
+        "name": "Cam Atkinson",
+        "id": 8474715,
+        "teamId": 4
+    },
+    {
+        "name": "Ryan Ellis",
+        "id": 8475176,
+        "teamId": 4
+    },
+    {
+        "name": "Sean Couturier",
+        "id": 8476461,
+        "teamId": 4
+    },
+    {
+        "name": "Justin Braun",
+        "id": 8474027,
+        "teamId": 4
+    },
+    {
+        "name": "James van Riemsdyk",
+        "id": 8474037,
+        "teamId": 4
+    },
+    {
+        "name": "Nicolas Deslauriers",
+        "id": 8475235,
+        "teamId": 4
+    },
+    {
+        "name": "Nick Seeler",
+        "id": 8476372,
+        "teamId": 4
+    },
+    {
+        "name": "Scott Laughton",
+        "id": 8476872,
+        "teamId": 4
+    },
+    {
+        "name": "Cal Petersen",
+        "id": 8477361,
+        "teamId": 4
+    },
+    {
+        "name": "Rasmus Ristolainen",
+        "id": 8477499,
+        "teamId": 4
+    },
+    {
+        "name": "Travis Sanheim",
+        "id": 8477948,
+        "teamId": 4
+    },
+    {
+        "name": "Tony DeAngelo",
+        "id": 8477950,
+        "teamId": 4
+    },
+    {
+        "name": "Brendan Lemieux",
+        "id": 8477962,
+        "teamId": 4
+    },
+    {
+        "name": "Felix Sandstrom",
+        "id": 8478433,
+        "teamId": 4
+    },
+    {
+        "name": "Travis Konecny",
+        "id": 8478439,
+        "teamId": 4
+    },
+    {
+        "name": "Wade Allison",
+        "id": 8479322,
+        "teamId": 4
+    },
+    {
+        "name": "Kieffer Bellows",
+        "id": 8479356,
+        "teamId": 4
+    },
+    {
+        "name": "Carter Hart",
+        "id": 8479394,
+        "teamId": 4
+    },
+    {
+        "name": "Tanner Laczynski",
+        "id": 8479550,
+        "teamId": 4
+    },
+    {
+        "name": "Owen Tippett",
+        "id": 8480015,
+        "teamId": 4
+    },
+    {
+        "name": "Morgan Frost",
+        "id": 8480028,
+        "teamId": 4
+    },
+    {
+        "name": "Noah Cates",
+        "id": 8480220,
+        "teamId": 4
+    },
+    {
+        "name": "Sean Walker",
+        "id": 8480336,
+        "teamId": 4
+    },
+    {
+        "name": "Joel Farabee",
+        "id": 8480797,
+        "teamId": 4
+    },
+    {
+        "name": "Cam York",
+        "id": 8481546,
+        "teamId": 4
+    },
+    {
+        "name": "Jeff Carter",
+        "id": 8470604,
+        "teamId": 5
+    },
+    {
+        "name": "Evgeni Malkin",
+        "id": 8471215,
+        "teamId": 5
+    },
+    {
+        "name": "Sidney Crosby",
+        "id": 8471675,
+        "teamId": 5
+    },
+    {
+        "name": "Kris Letang",
+        "id": 8471724,
+        "teamId": 5
+    },
+    {
+        "name": "Jeff Petry",
+        "id": 8473507,
+        "teamId": 5
+    },
+    {
+        "name": "Nick Bonino",
+        "id": 8474009,
+        "teamId": 5
+    },
+    {
+        "name": "Dmitry Kulikov",
+        "id": 8475179,
+        "teamId": 5
+    },
+    {
+        "name": "Brian Dumoulin",
+        "id": 8475208,
+        "teamId": 5
+    },
+    {
+        "name": "Jason Zucker",
+        "id": 8475722,
+        "teamId": 5
+    },
+    {
+        "name": "Mikael Granlund",
+        "id": 8475798,
+        "teamId": 5
+    },
+    {
+        "name": "Bryan Rust",
+        "id": 8475810,
+        "teamId": 5
+    },
+    {
+        "name": "Josh Archibald",
+        "id": 8476326,
+        "teamId": 5
+    },
+    {
+        "name": "Rickard Rakell",
+        "id": 8476483,
+        "teamId": 5
+    },
+    {
+        "name": "Chad Ruhwedel",
+        "id": 8477244,
+        "teamId": 5
+    },
+    {
+        "name": "Jake Guentzel",
+        "id": 8477404,
+        "teamId": 5
+    },
+    {
+        "name": "Tristan Jarry",
+        "id": 8477465,
+        "teamId": 5
+    },
+    {
+        "name": "Marcus Pettersson",
+        "id": 8477969,
+        "teamId": 5
+    },
+    {
+        "name": "Danton Heinen",
+        "id": 8478046,
+        "teamId": 5
+    },
+    {
+        "name": "Casey DeSmith",
+        "id": 8479193,
+        "teamId": 5
+    },
+    {
+        "name": "Alex Nylander",
+        "id": 8479423,
+        "teamId": 5
+    },
+    {
+        "name": "Pierre-Olivier Joseph",
+        "id": 8480058,
+        "teamId": 5
+    },
+    {
+        "name": "Ryan Poehling",
+        "id": 8480068,
+        "teamId": 5
+    },
+    {
+        "name": "Jan Rutta",
+        "id": 8480172,
+        "teamId": 5
+    },
+    {
+        "name": "Drew O'Connor",
+        "id": 8482055,
+        "teamId": 5
+    },
+    {
+        "name": "Anton Stralman",
+        "id": 8471873,
+        "teamId": 6
+    },
+    {
+        "name": "Patrice Bergeron",
+        "id": 8470638,
+        "teamId": 6
+    },
+    {
+        "name": "David Krejci",
+        "id": 8471276,
+        "teamId": 6
+    },
+    {
+        "name": "Brad Marchand",
+        "id": 8473419,
+        "teamId": 6
+    },
+    {
+        "name": "Dmitry Orlov",
+        "id": 8475200,
+        "teamId": 6
+    },
+    {
+        "name": "Charlie Coyle",
+        "id": 8475745,
+        "teamId": 6
+    },
+    {
+        "name": "Derek Forbort",
+        "id": 8475762,
+        "teamId": 6
+    },
+    {
+        "name": "Hampus Lindholm",
+        "id": 8476854,
+        "teamId": 6
+    },
+    {
+        "name": "Matt Grzelcyk",
+        "id": 8476891,
+        "teamId": 6
+    },
+    {
+        "name": "Linus Ullmark",
+        "id": 8476999,
+        "teamId": 6
+    },
+    {
+        "name": "Connor Clifton",
+        "id": 8477365,
+        "teamId": 6
+    },
+    {
+        "name": "Tyler Bertuzzi",
+        "id": 8477479,
+        "teamId": 6
+    },
+    {
+        "name": "Garnet Hathaway",
+        "id": 8477903,
+        "teamId": 6
+    },
+    {
+        "name": "Tomas Nosek",
+        "id": 8477931,
+        "teamId": 6
+    },
+    {
+        "name": "David Pastrnak",
+        "id": 8477956,
+        "teamId": 6
+    },
+    {
+        "name": "Pavel Zacha",
+        "id": 8478401,
+        "teamId": 6
+    },
+    {
+        "name": "Jakub Zboril",
+        "id": 8478415,
+        "teamId": 6
+    },
+    {
+        "name": "A.J. Greer",
+        "id": 8478421,
+        "teamId": 6
+    },
+    {
+        "name": "Brandon Carlo",
+        "id": 8478443,
+        "teamId": 6
+    },
+    {
+        "name": "Jake DeBrusk",
+        "id": 8478498,
+        "teamId": 6
+    },
+    {
+        "name": "Charlie McAvoy",
+        "id": 8479325,
+        "teamId": 6
+    },
+    {
+        "name": "Trent Frederic",
+        "id": 8479365,
+        "teamId": 6
+    },
+    {
+        "name": "Ian Mitchell",
+        "id": 8480070,
+        "teamId": 6
+    },
+    {
+        "name": "Jeremy Swayman",
+        "id": 8480280,
+        "teamId": 6
+    },
+    {
+        "name": "Craig Anderson",
+        "id": 8467950,
+        "teamId": 7
+    },
+    {
+        "name": "Kyle Okposo",
+        "id": 8473449,
+        "teamId": 7
+    },
+    {
+        "name": "Jeff Skinner",
+        "id": 8475784,
+        "teamId": 7
+    },
+    {
+        "name": "Zemgus Girgensons",
+        "id": 8476878,
+        "teamId": 7
+    },
+    {
+        "name": "Vinnie Hinostroza",
+        "id": 8476994,
+        "teamId": 7
+    },
+    {
+        "name": "Eric Comrie",
+        "id": 8477480,
+        "teamId": 7
+    },
+    {
+        "name": "Alex Tuch",
+        "id": 8477949,
+        "teamId": 7
+    },
+    {
+        "name": "Victor Olofsson",
+        "id": 8478109,
+        "teamId": 7
+    },
+    {
+        "name": "Jordan Greenway",
+        "id": 8478413,
+        "teamId": 7
+    },
+    {
+        "name": "Kale Clague",
+        "id": 8479348,
+        "teamId": 7
+    },
+    {
+        "name": "Tyson Jost",
+        "id": 8479370,
+        "teamId": 7
+    },
+    {
+        "name": "Riley Stillman",
+        "id": 8479388,
+        "teamId": 7
+    },
+    {
+        "name": "Tage Thompson",
+        "id": 8479420,
+        "teamId": 7
+    },
+    {
+        "name": "Casey Mittelstadt",
+        "id": 8479999,
+        "teamId": 7
+    },
+    {
+        "name": "Henri Jokiharju",
+        "id": 8480035,
+        "teamId": 7
+    },
+    {
+        "name": "Ukko-Pekka Luukkonen",
+        "id": 8480045,
+        "teamId": 7
+    },
+    {
+        "name": "Jacob Bryson",
+        "id": 8480196,
+        "teamId": 7
+    },
+    {
+        "name": "Mattias Samuelsson",
+        "id": 8480807,
+        "teamId": 7
+    },
+    {
+        "name": "Rasmus Dahlin",
+        "id": 8480839,
+        "teamId": 7
+    },
+    {
+        "name": "Ilya Lyubushkin",
+        "id": 8480950,
+        "teamId": 7
+    },
+    {
+        "name": "Peyton Krebs",
+        "id": 8481522,
+        "teamId": 7
+    },
+    {
+        "name": "Dylan Cozens",
+        "id": 8481528,
+        "teamId": 7
+    },
+    {
+        "name": "Jack Quinn",
+        "id": 8482097,
+        "teamId": 7
+    },
+    {
+        "name": "JJ Peterka",
+        "id": 8482175,
+        "teamId": 7
+    },
+    {
+        "name": "Devon Levi",
+        "id": 8482221,
+        "teamId": 7
+    },
+    {
+        "name": "Owen Power",
+        "id": 8482671,
+        "teamId": 7
+    },
+    {
+        "name": "Sean Monahan",
+        "id": 8477497,
+        "teamId": 8
+    },
+    {
+        "name": "Cole Caufield",
+        "id": 8481540,
+        "teamId": 8
+    },
+    {
+        "name": "Arber Xhekaj",
+        "id": 8482964,
+        "teamId": 8
+    },
+    {
+        "name": "Juraj Slafkovsky",
+        "id": 8483515,
+        "teamId": 8
+    },
+    {
+        "name": "Jake Allen",
+        "id": 8474596,
+        "teamId": 8
+    },
+    {
+        "name": "Mike Hoffman",
+        "id": 8474884,
+        "teamId": 8
+    },
+    {
+        "name": "Chris Wideman",
+        "id": 8475227,
+        "teamId": 8
+    },
+    {
+        "name": "David Savard",
+        "id": 8475233,
+        "teamId": 8
+    },
+    {
+        "name": "Brendan Gallagher",
+        "id": 8475848,
+        "teamId": 8
+    },
+    {
+        "name": "Alex Belzile",
+        "id": 8475968,
+        "teamId": 8
+    },
+    {
+        "name": "Joel Edmundson",
+        "id": 8476441,
+        "teamId": 8
+    },
+    {
+        "name": "Joel Armia",
+        "id": 8476469,
+        "teamId": 8
+    },
+    {
+        "name": "Mike Matheson",
+        "id": 8476875,
+        "teamId": 8
+    },
+    {
+        "name": "Chris Tierney",
+        "id": 8476919,
+        "teamId": 8
+    },
+    {
+        "name": "Josh Anderson",
+        "id": 8476981,
+        "teamId": 8
+    },
+    {
+        "name": "Jonathan Drouin",
+        "id": 8477494,
+        "teamId": 8
+    },
+    {
+        "name": "Christian Dvorak",
+        "id": 8477989,
+        "teamId": 8
+    },
+    {
+        "name": "Jake Evans",
+        "id": 8478133,
+        "teamId": 8
+    },
+    {
+        "name": "Sam Montembeault",
+        "id": 8478470,
+        "teamId": 8
+    },
+    {
+        "name": "Denis Gurianov",
+        "id": 8478495,
+        "teamId": 8
+    },
+    {
+        "name": "Rem Pitlick",
+        "id": 8479514,
+        "teamId": 8
+    },
+    {
+        "name": "Michael Pezzetta",
+        "id": 8479543,
+        "teamId": 8
+    },
+    {
+        "name": "Nick Suzuki",
+        "id": 8480018,
+        "teamId": 8
+    },
+    {
+        "name": "Johnathan Kovacevic",
+        "id": 8480192,
+        "teamId": 8
+    },
+    {
+        "name": "Jordan Harris",
+        "id": 8480887,
+        "teamId": 8
+    },
+    {
+        "name": "Kirby Dach",
+        "id": 8481523,
+        "teamId": 8
+    },
+    {
+        "name": "Alex Newhook",
+        "id": 8481618,
+        "teamId": 8
+    },
+    {
+        "name": "Sean Farrell",
+        "id": 8482081,
+        "teamId": 8
+    },
+    {
+        "name": "Kaiden Guhle",
+        "id": 8482087,
+        "teamId": 8
+    },
+    {
+        "name": "Justin Barron",
+        "id": 8482111,
+        "teamId": 8
+    },
+    {
+        "name": "Anton Forsberg",
+        "id": 8476341,
+        "teamId": 9
+    },
+    {
+        "name": "Josh Norris",
+        "id": 8480064,
+        "teamId": 9
+    },
+    {
+        "name": "Claude Giroux",
+        "id": 8473512,
+        "teamId": 9
+    },
+    {
+        "name": "Derick Brassard",
+        "id": 8473544,
+        "teamId": 9
+    },
+    {
+        "name": "Nick Holden",
+        "id": 8474207,
+        "teamId": 9
+    },
+    {
+        "name": "Travis Hamonic",
+        "id": 8474612,
+        "teamId": 9
+    },
+    {
+        "name": "Cam Talbot",
+        "id": 8475660,
+        "teamId": 9
+    },
+    {
+        "name": "Austin Watson",
+        "id": 8475766,
+        "teamId": 9
+    },
+    {
+        "name": "Patrick Brown",
+        "id": 8477887,
+        "teamId": 9
+    },
+    {
+        "name": "Thomas Chabot",
+        "id": 8478469,
+        "teamId": 9
+    },
+    {
+        "name": "Mathieu Joseph",
+        "id": 8478472,
+        "teamId": 9
+    },
+    {
+        "name": "Julien Gauthier",
+        "id": 8479328,
+        "teamId": 9
+    },
+    {
+        "name": "Alex DeBrincat",
+        "id": 8479337,
+        "teamId": 9
+    },
+    {
+        "name": "Jakob Chychrun",
+        "id": 8479345,
+        "teamId": 9
+    },
+    {
+        "name": "Dylan Gambrell",
+        "id": 8479580,
+        "teamId": 9
+    },
+    {
+        "name": "Erik Brannstrom",
+        "id": 8480073,
+        "teamId": 9
+    },
+    {
+        "name": "Drake Batherson",
+        "id": 8480208,
+        "teamId": 9
+    },
+    {
+        "name": "Mark Kastelic",
+        "id": 8480355,
+        "teamId": 9
+    },
+    {
+        "name": "Parker Kelly",
+        "id": 8480448,
+        "teamId": 9
+    },
+    {
+        "name": "Brady Tkachuk",
+        "id": 8480801,
+        "teamId": 9
+    },
+    {
+        "name": "Shane Pinto",
+        "id": 8481596,
+        "teamId": 9
+    },
+    {
+        "name": "Tyler Kleven",
+        "id": 8482095,
+        "teamId": 9
+    },
+    {
+        "name": "Jake Sanderson",
+        "id": 8482105,
+        "teamId": 9
+    },
+    {
+        "name": "Tim Stützle",
+        "id": 8482116,
+        "teamId": 9
+    },
+    {
+        "name": "Artem Zub",
+        "id": 8482245,
+        "teamId": 9
+    },
+    {
+        "name": "Jake Muzzin",
+        "id": 8474162,
+        "teamId": 10
+    },
+    {
+        "name": "Victor Mete",
+        "id": 8479376,
+        "teamId": 10
+    },
+    {
+        "name": "Nicholas Robertson",
+        "id": 8481582,
+        "teamId": 10
+    },
+    {
+        "name": "Carl Dahlstrom",
+        "id": 8477472,
+        "teamId": 10
+    },
+    {
+        "name": "Mark Giordano",
+        "id": 8470966,
+        "teamId": 10
+    },
+    {
+        "name": "Wayne Simmonds",
+        "id": 8474190,
+        "teamId": 10
+    },
+    {
+        "name": "Luke Schenn",
+        "id": 8474568,
+        "teamId": 10
+    },
+    {
+        "name": "TJ Brodie",
+        "id": 8474673,
+        "teamId": 10
+    },
+    {
+        "name": "Ryan O'Reilly",
+        "id": 8475158,
+        "teamId": 10
+    },
+    {
+        "name": "John Tavares",
+        "id": 8475166,
+        "teamId": 10
+    },
+    {
+        "name": "Calle Jarnkrok",
+        "id": 8475714,
+        "teamId": 10
+    },
+    {
+        "name": "Justin Holl",
+        "id": 8475718,
+        "teamId": 10
+    },
+    {
+        "name": "Morgan Rielly",
+        "id": 8476853,
+        "teamId": 10
+    },
+    {
+        "name": "Matt Murray",
+        "id": 8476899,
+        "teamId": 10
+    },
+    {
+        "name": "Jake McCabe",
+        "id": 8476931,
+        "teamId": 10
+    },
+    {
+        "name": "Erik Gustafsson",
+        "id": 8476979,
+        "teamId": 10
+    },
+    {
+        "name": "Alexander Kerfoot",
+        "id": 8477021,
+        "teamId": 10
+    },
+    {
+        "name": "William Nylander",
+        "id": 8477939,
+        "teamId": 10
+    },
+    {
+        "name": "Sam Lafferty",
+        "id": 8478043,
+        "teamId": 10
+    },
+    {
+        "name": "Michael Bunting",
+        "id": 8478047,
+        "teamId": 10
+    },
+    {
+        "name": "Mitchell Marner",
+        "id": 8478483,
+        "teamId": 10
+    },
+    {
+        "name": "Ilya Samsonov",
+        "id": 8478492,
+        "teamId": 10
+    },
+    {
+        "name": "Noel Acciari",
+        "id": 8478569,
+        "teamId": 10
+    },
+    {
+        "name": "Auston Matthews",
+        "id": 8479318,
+        "teamId": 10
+    },
+    {
+        "name": "Zach Aston-Reese",
+        "id": 8479944,
+        "teamId": 10
+    },
+    {
+        "name": "Conor Timmins",
+        "id": 8479982,
+        "teamId": 10
+    },
+    {
+        "name": "Timothy Liljegren",
+        "id": 8480043,
+        "teamId": 10
+    },
+    {
+        "name": "David Kampf",
+        "id": 8480144,
+        "teamId": 10
+    },
+    {
+        "name": "Matthew Knies",
+        "id": 8482720,
+        "teamId": 10
+    },
+    {
+        "name": "Max Pacioretty",
+        "id": 8474157,
+        "teamId": 12
+    },
+    {
+        "name": "Ondrej Kase",
+        "id": 8478131,
+        "teamId": 12
+    },
+    {
+        "name": "Andrei Svechnikov",
+        "id": 8480830,
+        "teamId": 12
+    },
+    {
+        "name": "Brent Burns",
+        "id": 8470613,
+        "teamId": 12
+    },
+    {
+        "name": "Paul Stastny",
+        "id": 8471669,
+        "teamId": 12
+    },
+    {
+        "name": "Jordan Staal",
+        "id": 8473533,
+        "teamId": 12
+    },
+    {
+        "name": "Derek Stepan",
+        "id": 8474613,
+        "teamId": 12
+    },
+    {
+        "name": "Calvin de Haan",
+        "id": 8475177,
+        "teamId": 12
+    },
+    {
+        "name": "Jesper Fast",
+        "id": 8475855,
+        "teamId": 12
+    },
+    {
+        "name": "Frederik Andersen",
+        "id": 8475883,
+        "teamId": 12
+    },
+    {
+        "name": "Stefan Noesen",
+        "id": 8476474,
+        "teamId": 12
+    },
+    {
+        "name": "Brady Skjei",
+        "id": 8476869,
+        "teamId": 12
+    },
+    {
+        "name": "Teuvo Teravainen",
+        "id": 8476882,
+        "teamId": 12
+    },
+    {
+        "name": "Shayne Gostisbehere",
+        "id": 8476906,
+        "teamId": 12
+    },
+    {
+        "name": "Mackenzie MacEachern",
+        "id": 8476907,
+        "teamId": 12
+    },
+    {
+        "name": "Jordan Martinook",
+        "id": 8476921,
+        "teamId": 12
+    },
+    {
+        "name": "Jaccob Slavin",
+        "id": 8476958,
+        "teamId": 12
+    },
+    {
+        "name": "Antti Raanta",
+        "id": 8477293,
+        "teamId": 12
+    },
+    {
+        "name": "Brett Pesce",
+        "id": 8477488,
+        "teamId": 12
+    },
+    {
+        "name": "Sebastian Aho",
+        "id": 8478427,
+        "teamId": 12
+    },
+    {
+        "name": "Jalen Chatfield",
+        "id": 8478970,
+        "teamId": 12
+    },
+    {
+        "name": "Zach Sawchenko",
+        "id": 8479313,
+        "teamId": 12
+    },
+    {
+        "name": "Maxime Lajoie",
+        "id": 8479320,
+        "teamId": 12
+    },
+    {
+        "name": "Jesse Puljujarvi",
+        "id": 8479344,
+        "teamId": 12
+    },
+    {
+        "name": "Dylan Coghlan",
+        "id": 8479639,
+        "teamId": 12
+    },
+    {
+        "name": "Martin Necas",
+        "id": 8480039,
+        "teamId": 12
+    },
+    {
+        "name": "Jesperi Kotkaniemi",
+        "id": 8480829,
+        "teamId": 12
+    },
+    {
+        "name": "Jack Drury",
+        "id": 8480835,
+        "teamId": 12
+    },
+    {
+        "name": "Ryan Suzuki",
+        "id": 8481576,
+        "teamId": 12
+    },
+    {
+        "name": "Jamieson Rees",
+        "id": 8481579,
+        "teamId": 12
+    },
+    {
+        "name": "Pyotr Kochetkov",
+        "id": 8481611,
+        "teamId": 12
+    },
+    {
+        "name": "Seth Jarvis",
+        "id": 8482093,
+        "teamId": 12
+    },
+    {
+        "name": "Vasily Ponomarev",
+        "id": 8482102,
+        "teamId": 12
+    },
+    {
+        "name": "Patric Hornqvist",
+        "id": 8471887,
+        "teamId": 13
+    },
+    {
+        "name": "Spencer Knight",
+        "id": 8481519,
+        "teamId": 13
+    },
+    {
+        "name": "Eric Staal",
+        "id": 8470595,
+        "teamId": 13
+    },
+    {
+        "name": "Marc Staal",
+        "id": 8471686,
+        "teamId": 13
+    },
+    {
+        "name": "Zac Dalpe",
+        "id": 8474610,
+        "teamId": 13
+    },
+    {
+        "name": "Radko Gudas",
+        "id": 8475462,
+        "teamId": 13
+    },
+    {
+        "name": "Sergei Bobrovsky",
+        "id": 8475683,
+        "teamId": 13
+    },
+    {
+        "name": "Nick Cousins",
+        "id": 8476393,
+        "teamId": 13
+    },
+    {
+        "name": "Anthony Duclair",
+        "id": 8477407,
+        "teamId": 13
+    },
+    {
+        "name": "Carter Verhaeghe",
+        "id": 8477409,
+        "teamId": 13
+    },
+    {
+        "name": "Aleksander Barkov",
+        "id": 8477493,
+        "teamId": 13
+    },
+    {
+        "name": "Aaron Ekblad",
+        "id": 8477932,
+        "teamId": 13
+    },
+    {
+        "name": "Sam Reinhart",
+        "id": 8477933,
+        "teamId": 13
+    },
+    {
+        "name": "Sam Bennett",
+        "id": 8477935,
+        "teamId": 13
+    },
+    {
+        "name": "Brandon Montour",
+        "id": 8477986,
+        "teamId": 13
+    },
+    {
+        "name": "Gustav Forsling",
+        "id": 8478055,
+        "teamId": 13
+    },
+    {
+        "name": "Colin White",
+        "id": 8478400,
+        "teamId": 13
+    },
+    {
+        "name": "Ryan Lomberg",
+        "id": 8479066,
+        "teamId": 13
+    },
+    {
+        "name": "Alex Lyon",
+        "id": 8479312,
+        "teamId": 13
+    },
+    {
+        "name": "Matthew Tkachuk",
+        "id": 8479314,
+        "teamId": 13
+    },
+    {
+        "name": "Josh Mahura",
+        "id": 8479372,
+        "teamId": 13
+    },
+    {
+        "name": "Givani Smith",
+        "id": 8479379,
+        "teamId": 13
+    },
+    {
+        "name": "Connor Bunnaman",
+        "id": 8479382,
+        "teamId": 13
+    },
+    {
+        "name": "Evan Fitzpatrick",
+        "id": 8479399,
+        "teamId": 13
+    },
+    {
+        "name": "Lucas Carlsson",
+        "id": 8479523,
+        "teamId": 13
+    },
+    {
+        "name": "Casey Fitzgerald",
+        "id": 8479578,
+        "teamId": 13
+    },
+    {
+        "name": "Aleksi Heponiemi",
+        "id": 8480037,
+        "teamId": 13
+    },
+    {
+        "name": "Eetu Luostarinen",
+        "id": 8480185,
+        "teamId": 13
+    },
+    {
+        "name": "Calle Sjalin",
+        "id": 8480228,
+        "teamId": 13
+    },
+    {
+        "name": "Patrick Giles",
+        "id": 8480825,
+        "teamId": 13
+    },
+    {
+        "name": "Santtu Kinnunen",
+        "id": 8481009,
+        "teamId": 13
+    },
+    {
+        "name": "John Ludvig",
+        "id": 8481206,
+        "teamId": 13
+    },
+    {
+        "name": "Mike Benning",
+        "id": 8482107,
+        "teamId": 13
+    },
+    {
+        "name": "Anton Lundell",
+        "id": 8482113,
+        "teamId": 13
+    },
+    {
+        "name": "Matt Kiersted",
+        "id": 8482641,
+        "teamId": 13
+    },
+    {
+        "name": "Mackie Samoskevich",
+        "id": 8482713,
+        "teamId": 13
+    },
+    {
+        "name": "Corey Perry",
+        "id": 8470621,
+        "teamId": 14
+    },
+    {
+        "name": "Brian Elliott",
+        "id": 8470880,
+        "teamId": 14
+    },
+    {
+        "name": "Alex Killorn",
+        "id": 8473986,
+        "teamId": 14
+    },
+    {
+        "name": "Ian Cole",
+        "id": 8474013,
+        "teamId": 14
+    },
+    {
+        "name": "Pat Maroon",
+        "id": 8474034,
+        "teamId": 14
+    },
+    {
+        "name": "Steven Stamkos",
+        "id": 8474564,
+        "teamId": 14
+    },
+    {
+        "name": "Zach Bogosian",
+        "id": 8474567,
+        "teamId": 14
+    },
+    {
+        "name": "Victor Hedman",
+        "id": 8475167,
+        "teamId": 14
+    },
+    {
+        "name": "Nikita Kucherov",
+        "id": 8476453,
+        "teamId": 14
+    },
+    {
+        "name": "Andrei Vasilevskiy",
+        "id": 8476883,
+        "teamId": 14
+    },
+    {
+        "name": "Nicholas Paul",
+        "id": 8477426,
+        "teamId": 14
+    },
+    {
+        "name": "Pierre-Edouard Bellemare",
+        "id": 8477930,
+        "teamId": 14
+    },
+    {
+        "name": "Haydn Fleury",
+        "id": 8477938,
+        "teamId": 14
+    },
+    {
+        "name": "Brayden Point",
+        "id": 8478010,
+        "teamId": 14
+    },
+    {
+        "name": "Darren Raddysh",
+        "id": 8478178,
+        "teamId": 14
+    },
+    {
+        "name": "Erik Cernak",
+        "id": 8478416,
+        "teamId": 14
+    },
+    {
+        "name": "Anthony Cirelli",
+        "id": 8478519,
+        "teamId": 14
+    },
+    {
+        "name": "Mikhail Sergachev",
+        "id": 8479410,
+        "teamId": 14
+    },
+    {
+        "name": "Brandon Hagel",
+        "id": 8479542,
+        "teamId": 14
+    },
+    {
+        "name": "Michael Eyssimont",
+        "id": 8479591,
+        "teamId": 14
+    },
+    {
+        "name": "Tanner Jeannot",
+        "id": 8479661,
+        "teamId": 14
+    },
+    {
+        "name": "Nick Perbix",
+        "id": 8480246,
+        "teamId": 14
+    },
+    {
+        "name": "Carl Hagelin",
+        "id": 8474176,
+        "teamId": 15
+    },
+    {
+        "name": "Connor Brown",
+        "id": 8477015,
+        "teamId": 15
+    },
+    {
+        "name": "Beck Malenstyn",
+        "id": 8479359,
+        "teamId": 15
+    },
+    {
+        "name": "Henrik Borgstrom",
+        "id": 8479404,
+        "teamId": 15
+    },
+    {
+        "name": "Aliaksei Protas",
+        "id": 8481656,
+        "teamId": 15
+    },
+    {
+        "name": "Alex Ovechkin",
+        "id": 8471214,
+        "teamId": 15
+    },
+    {
+        "name": "T.J. Oshie",
+        "id": 8471698,
+        "teamId": 15
+    },
+    {
+        "name": "Nicklas Backstrom",
+        "id": 8473563,
+        "teamId": 15
+    },
+    {
+        "name": "John Carlson",
+        "id": 8474590,
+        "teamId": 15
+    },
+    {
+        "name": "Craig Smith",
+        "id": 8475225,
+        "teamId": 15
+    },
+    {
+        "name": "Darcy Kuemper",
+        "id": 8475311,
+        "teamId": 15
+    },
+    {
+        "name": "Nick Jensen",
+        "id": 8475324,
+        "teamId": 15
+    },
+    {
+        "name": "Nic Dowd",
+        "id": 8475343,
+        "teamId": 15
+    },
+    {
+        "name": "Matt Irwin",
+        "id": 8475625,
+        "teamId": 15
+    },
+    {
+        "name": "Evgeny Kuznetsov",
+        "id": 8475744,
+        "teamId": 15
+    },
+    {
+        "name": "Tom Wilson",
+        "id": 8476880,
+        "teamId": 15
+    },
+    {
+        "name": "Anthony Mantha",
+        "id": 8477511,
+        "teamId": 15
+    },
+    {
+        "name": "Conor Sheary",
+        "id": 8477839,
+        "teamId": 15
+    },
+    {
+        "name": "Trevor van Riemsdyk",
+        "id": 8477845,
+        "teamId": 15
+    },
+    {
+        "name": "Sonny Milano",
+        "id": 8477947,
+        "teamId": 15
+    },
+    {
+        "name": "Nicolas Aube-Kubel",
+        "id": 8477979,
+        "teamId": 15
+    },
+    {
+        "name": "Dylan Strome",
+        "id": 8478440,
+        "teamId": 15
+    },
+    {
+        "name": "Charlie Lindgren",
+        "id": 8479292,
+        "teamId": 15
+    },
+    {
+        "name": "Martin Fehervary",
+        "id": 8480796,
+        "teamId": 15
+    },
+    {
+        "name": "Alexander Alexeyev",
+        "id": 8480823,
+        "teamId": 15
+    },
+    {
+        "name": "Rasmus Sandin",
+        "id": 8480873,
+        "teamId": 15
+    },
+    {
+        "name": "Alex Stalock",
+        "id": 8471774,
+        "teamId": 16
+    },
+    {
+        "name": "Nick Foligno",
+        "id": 8473422,
+        "teamId": 16
+    },
+    {
+        "name": "Jonathan Toews",
+        "id": 8473604,
+        "teamId": 16
+    },
+    {
+        "name": "Tyler Johnson",
+        "id": 8474870,
+        "teamId": 16
+    },
+    {
+        "name": "Taylor Hall",
+        "id": 8475791,
+        "teamId": 16
+    },
+    {
+        "name": "Jarred Tinordi",
+        "id": 8475797,
+        "teamId": 16
+    },
+    {
+        "name": "Petr Mrazek",
+        "id": 8475852,
+        "teamId": 16
+    },
+    {
+        "name": "Colin Blackwell",
+        "id": 8476278,
+        "teamId": 16
+    },
+    {
+        "name": "Connor Murphy",
+        "id": 8476473,
+        "teamId": 16
+    },
+    {
+        "name": "Jujhar Khaira",
+        "id": 8476915,
+        "teamId": 16
+    },
+    {
+        "name": "Andreas Athanasiou",
+        "id": 8476960,
+        "teamId": 16
+    },
+    {
+        "name": "Jason Dickinson",
+        "id": 8477450,
+        "teamId": 16
+    },
+    {
+        "name": "Seth Jones",
+        "id": 8477495,
+        "teamId": 16
+    },
+    {
+        "name": "Andreas Englund",
+        "id": 8477971,
+        "teamId": 16
+    },
+    {
+        "name": "Anders Bjork",
+        "id": 8478075,
+        "teamId": 16
+    },
+    {
+        "name": "Caleb Jones",
+        "id": 8478452,
+        "teamId": 16
+    },
+    {
+        "name": "Austin Wagner",
+        "id": 8478455,
+        "teamId": 16
+    },
+    {
+        "name": "Boris Katchouk",
+        "id": 8479383,
+        "teamId": 16
+    },
+    {
+        "name": "Taylor Raddysh",
+        "id": 8479390,
+        "teamId": 16
+    },
+    {
+        "name": "Nikita Zaitsev",
+        "id": 8479458,
+        "teamId": 16
+    },
+    {
+        "name": "MacKenzie Entwistle",
+        "id": 8480025,
+        "teamId": 16
+    },
+    {
+        "name": "Cole Guttman",
+        "id": 8480252,
+        "teamId": 16
+    },
+    {
+        "name": "Philipp Kurashev",
+        "id": 8480798,
+        "teamId": 16
+    },
+    {
+        "name": "Reese Johnson",
+        "id": 8481147,
+        "teamId": 16
+    },
+    {
+        "name": "Wyatt Kaiser",
+        "id": 8482176,
+        "teamId": 16
+    },
+    {
+        "name": "Michael Rasmussen",
+        "id": 8479992,
+        "teamId": 17
+    },
+    {
+        "name": "Danny O'Regan",
+        "id": 8476982,
+        "teamId": 17
+    },
+    {
+        "name": "Simon Edvinsson",
+        "id": 8482762,
+        "teamId": 17
+    },
+    {
+        "name": "David Perron",
+        "id": 8474102,
+        "teamId": 17
+    },
+    {
+        "name": "Alex Chiasson",
+        "id": 8475163,
+        "teamId": 17
+    },
+    {
+        "name": "Ben Chiarot",
+        "id": 8475279,
+        "teamId": 17
+    },
+    {
+        "name": "Magnus Hellberg",
+        "id": 8476433,
+        "teamId": 17
+    },
+    {
+        "name": "Olli Maatta",
+        "id": 8476874,
+        "teamId": 17
+    },
+    {
+        "name": "Dominik Kubalik",
+        "id": 8477330,
+        "teamId": 17
+    },
+    {
+        "name": "Andrew Copp",
+        "id": 8477429,
+        "teamId": 17
+    },
+    {
+        "name": "Adam Erne",
+        "id": 8477454,
+        "teamId": 17
+    },
+    {
+        "name": "Robert Hagg",
+        "id": 8477462,
+        "teamId": 17
+    },
+    {
+        "name": "Jordan Oesterle",
+        "id": 8477851,
+        "teamId": 17
+    },
+    {
+        "name": "Dylan Larkin",
+        "id": 8477946,
+        "teamId": 17
+    },
+    {
+        "name": "Robby Fabbri",
+        "id": 8477952,
+        "teamId": 17
+    },
+    {
+        "name": "Jake Walman",
+        "id": 8478013,
+        "teamId": 17
+    },
+    {
+        "name": "Ville Husso",
+        "id": 8478024,
+        "teamId": 17
+    },
+    {
+        "name": "Austin Czarnik",
+        "id": 8478512,
+        "teamId": 17
+    },
+    {
+        "name": "Matt Luff",
+        "id": 8479644,
+        "teamId": 17
+    },
+    {
+        "name": "Gustav Lindstrom",
+        "id": 8480184,
+        "teamId": 17
+    },
+    {
+        "name": "Pius Suter",
+        "id": 8480459,
+        "teamId": 17
+    },
+    {
+        "name": "Joe Veleno",
+        "id": 8480813,
+        "teamId": 17
+    },
+    {
+        "name": "Filip Zadina",
+        "id": 8480821,
+        "teamId": 17
+    },
+    {
+        "name": "Jonatan Berggren",
+        "id": 8481013,
+        "teamId": 17
+    },
+    {
+        "name": "Moritz Seider",
+        "id": 8481542,
+        "teamId": 17
+    },
+    {
+        "name": "Lucas Raymond",
+        "id": 8482078,
+        "teamId": 17
+    },
+    {
+        "name": "Marco Kasper",
+        "id": 8483464,
+        "teamId": 17
+    },
+    {
+        "name": "Mark Borowiecki",
+        "id": 8474697,
+        "teamId": 18
+    },
+    {
+        "name": "Filip Forsberg",
+        "id": 8476887,
+        "teamId": 18
+    },
+    {
+        "name": "Ryan McDonagh",
+        "id": 8474151,
+        "teamId": 18
+    },
+    {
+        "name": "Roman Josi",
+        "id": 8474600,
+        "teamId": 18
+    },
+    {
+        "name": "Matt Duchene",
+        "id": 8475168,
+        "teamId": 18
+    },
+    {
+        "name": "Tyson Barrie",
+        "id": 8475197,
+        "teamId": 18
+    },
+    {
+        "name": "Colton Sissons",
+        "id": 8476925,
+        "teamId": 18
+    },
+    {
+        "name": "Juuse Saros",
+        "id": 8477424,
+        "teamId": 18
+    },
+    {
+        "name": "Tommy Novak",
+        "id": 8478438,
+        "teamId": 18
+    },
+    {
+        "name": "Jeremy Lauzon",
+        "id": 8478468,
+        "teamId": 18
+    },
+    {
+        "name": "Yakov Trenin",
+        "id": 8478508,
+        "teamId": 18
+    },
+    {
+        "name": "Alexandre Carrier",
+        "id": 8478851,
+        "teamId": 18
+    },
+    {
+        "name": "Rasmus Asplund",
+        "id": 8479335,
+        "teamId": 18
+    },
+    {
+        "name": "Dante Fabbro",
+        "id": 8479371,
+        "teamId": 18
+    },
+    {
+        "name": "Cal Foote",
+        "id": 8479984,
+        "teamId": 18
+    },
+    {
+        "name": "Cody Glass",
+        "id": 8479996,
+        "teamId": 18
+    },
+    {
+        "name": "Kevin Lankinen",
+        "id": 8480947,
+        "teamId": 18
+    },
+    {
+        "name": "Juuso Parssinen",
+        "id": 8481704,
+        "teamId": 18
+    },
+    {
+        "name": "Cole Smith",
+        "id": 8482062,
+        "teamId": 18
+    },
+    {
+        "name": "Jake Livingstone",
+        "id": 8484256,
+        "teamId": 18
+    },
+    {
+        "name": "Thomas Greiss",
+        "id": 8471306,
+        "teamId": 19
+    },
+    {
+        "name": "Robert Bortuzzo",
+        "id": 8474145,
+        "teamId": 19
+    },
+    {
+        "name": "Marco Scandella",
+        "id": 8474618,
+        "teamId": 19
+    },
+    {
+        "name": "Brayden Schenn",
+        "id": 8475170,
+        "teamId": 19
+    },
+    {
+        "name": "Nick Leddy",
+        "id": 8475181,
+        "teamId": 19
+    },
+    {
+        "name": "Tyler Pitlick",
+        "id": 8475752,
+        "teamId": 19
+    },
+    {
+        "name": "Justin Faulk",
+        "id": 8475753,
+        "teamId": 19
+    },
+    {
+        "name": "Kevin Hayes",
+        "id": 8475763,
+        "teamId": 19
+    },
+    {
+        "name": "Josh Leivo",
+        "id": 8476410,
+        "teamId": 19
+    },
+    {
+        "name": "Jordan Binnington",
+        "id": 8476412,
+        "teamId": 19
+    },
+    {
+        "name": "Brandon Saad",
+        "id": 8476438,
+        "teamId": 19
+    },
+    {
+        "name": "Torey Krug",
+        "id": 8476792,
+        "teamId": 19
+    },
+    {
+        "name": "Colton Parayko",
+        "id": 8476892,
+        "teamId": 19
+    },
+    {
+        "name": "Pavel Buchnevich",
+        "id": 8477402,
+        "teamId": 19
+    },
+    {
+        "name": "Nathan Walker",
+        "id": 8477573,
+        "teamId": 19
+    },
+    {
+        "name": "Jakub Vrana",
+        "id": 8477944,
+        "teamId": 19
+    },
+    {
+        "name": "Kasperi Kapanen",
+        "id": 8477953,
+        "teamId": 19
+    },
+    {
+        "name": "Sammy Blais",
+        "id": 8478104,
+        "teamId": 19
+    },
+    {
+        "name": "Logan Brown",
+        "id": 8479366,
+        "teamId": 19
+    },
+    {
+        "name": "Jordan Kyrou",
+        "id": 8479385,
+        "teamId": 19
+    },
+    {
+        "name": "Robert Thomas",
+        "id": 8480023,
+        "teamId": 19
+    },
+    {
+        "name": "Calle Rosen",
+        "id": 8480157,
+        "teamId": 19
+    },
+    {
+        "name": "Alexey Toropchenko",
+        "id": 8480281,
+        "teamId": 19
+    },
+    {
+        "name": "Jake Neighbours",
+        "id": 8482089,
+        "teamId": 19
+    },
+    {
+        "name": "Jakob Pelletier",
+        "id": 8481592,
+        "teamId": 20
+    },
+    {
+        "name": "Dustin Wolf",
+        "id": 8481692,
+        "teamId": 20
+    },
+    {
+        "name": "Walker Duehr",
+        "id": 8482652,
+        "teamId": 20
+    },
+    {
+        "name": "Trevor Lewis",
+        "id": 8473453,
+        "teamId": 20
+    },
+    {
+        "name": "Milan Lucic",
+        "id": 8473473,
+        "teamId": 20
+    },
+    {
+        "name": "Mikael Backlund",
+        "id": 8474150,
+        "teamId": 20
+    },
+    {
+        "name": "Jacob Markstrom",
+        "id": 8474593,
+        "teamId": 20
+    },
+    {
+        "name": "Michael Stone",
+        "id": 8474628,
+        "teamId": 20
+    },
+    {
+        "name": "Nazem Kadri",
+        "id": 8475172,
+        "teamId": 20
+    },
+    {
+        "name": "Chris Tanev",
+        "id": 8475690,
+        "teamId": 20
+    },
+    {
+        "name": "Blake Coleman",
+        "id": 8476399,
+        "teamId": 20
+    },
+    {
+        "name": "Jonathan Huberdeau",
+        "id": 8476456,
+        "teamId": 20
+    },
+    {
+        "name": "MacKenzie Weegar",
+        "id": 8477346,
+        "teamId": 20
+    },
+    {
+        "name": "Elias Lindholm",
+        "id": 8477496,
+        "teamId": 20
+    },
+    {
+        "name": "Nikita Zadorov",
+        "id": 8477507,
+        "teamId": 20
+    },
+    {
+        "name": "Nick Ritchie",
+        "id": 8477941,
+        "teamId": 20
+    },
+    {
+        "name": "Andrew Mangiapane",
+        "id": 8478233,
+        "teamId": 20
+    },
+    {
+        "name": "Noah Hanifin",
+        "id": 8478396,
+        "teamId": 20
+    },
+    {
+        "name": "Rasmus Andersson",
+        "id": 8478397,
+        "teamId": 20
+    },
+    {
+        "name": "Dan Vladar",
+        "id": 8478435,
+        "teamId": 20
+    },
+    {
+        "name": "Dennis Gilbert",
+        "id": 8478502,
+        "teamId": 20
+    },
+    {
+        "name": "Dillon Dube",
+        "id": 8479346,
+        "teamId": 20
+    },
+    {
+        "name": "Troy Stecher",
+        "id": 8479442,
+        "teamId": 20
+    },
+    {
+        "name": "Adam Ruzicka",
+        "id": 8480008,
+        "teamId": 20
+    },
+    {
+        "name": "Yegor Sharangovich",
+        "id": 8481068,
+        "teamId": 20
+    },
+    {
+        "name": "Matt Coronato",
+        "id": 8482679,
+        "teamId": 20
+    },
+    {
+        "name": "Keith Kinkaid",
+        "id": 8476234,
+        "teamId": 21
+    },
+    {
+        "name": "Charles Hudon",
+        "id": 8476948,
+        "teamId": 21
+    },
+    {
+        "name": "Sampo Ranta",
+        "id": 8480846,
+        "teamId": 21
+    },
+    {
+        "name": "Jean-Luc Foudy",
+        "id": 8482147,
+        "teamId": 21
+    },
+    {
+        "name": "Ben Meyers",
+        "id": 8483570,
+        "teamId": 21
+    },
+    {
+        "name": "Jack Johnson",
+        "id": 8471677,
+        "teamId": 21
+    },
+    {
+        "name": "Andrew Cogliano",
+        "id": 8471699,
+        "teamId": 21
+    },
+    {
+        "name": "Darren Helm",
+        "id": 8471794,
+        "teamId": 21
+    },
+    {
+        "name": "Erik Johnson",
+        "id": 8473446,
+        "teamId": 21
+    },
+    {
+        "name": "Lars Eller",
+        "id": 8474189,
+        "teamId": 21
+    },
+    {
+        "name": "Ryan Johansen",
+        "id": 8475793,
+        "teamId": 21
+    },
+    {
+        "name": "Josh Manson",
+        "id": 8476312,
+        "teamId": 21
+    },
+    {
+        "name": "Matt Nieto",
+        "id": 8476442,
+        "teamId": 21
+    },
+    {
+        "name": "Kurtis MacDermid",
+        "id": 8477073,
+        "teamId": 21
+    },
+    {
+        "name": "J.T. Compher",
+        "id": 8477456,
+        "teamId": 21
+    },
+    {
+        "name": "Artturi Lehkonen",
+        "id": 8477476,
+        "teamId": 21
+    },
+    {
+        "name": "Nathan MacKinnon",
+        "id": 8477492,
+        "teamId": 21
+    },
+    {
+        "name": "Valeri Nichushkin",
+        "id": 8477501,
+        "teamId": 21
+    },
+    {
+        "name": "Fredrik Olofsson",
+        "id": 8478028,
+        "teamId": 21
+    },
+    {
+        "name": "Devon Toews",
+        "id": 8478038,
+        "teamId": 21
+    },
+    {
+        "name": "Mikko Rantanen",
+        "id": 8478420,
+        "teamId": 21
+    },
+    {
+        "name": "Evan Rodrigues",
+        "id": 8478542,
+        "teamId": 21
+    },
+    {
+        "name": "Denis Malgin",
+        "id": 8478843,
+        "teamId": 21
+    },
+    {
+        "name": "Samuel Girard",
+        "id": 8479398,
+        "teamId": 21
+    },
+    {
+        "name": "Ross Colton",
+        "id": 8479525,
+        "teamId": 21
+    },
+    {
+        "name": "Cale Makar",
+        "id": 8480069,
+        "teamId": 21
+    },
+    {
+        "name": "Alexandar Georgiev",
+        "id": 8480382,
+        "teamId": 21
+    },
+    {
+        "name": "Pavel Francouz",
+        "id": 8480925,
+        "teamId": 21
+    },
+    {
+        "name": "Logan O'Connor",
+        "id": 8481186,
+        "teamId": 21
+    },
+    {
+        "name": "Bowen Byram",
+        "id": 8481524,
+        "teamId": 21
+    },
+    {
+        "name": "Ryan Murray",
+        "id": 8476850,
+        "teamId": 22
+    },
+    {
+        "name": "Brad Malone",
+        "id": 8474089,
+        "teamId": 22
+    },
+    {
+        "name": "Evander Kane",
+        "id": 8475169,
+        "teamId": 22
+    },
+    {
+        "name": "Mattias Ekholm",
+        "id": 8475218,
+        "teamId": 22
+    },
+    {
+        "name": "Calvin Pickard",
+        "id": 8475717,
+        "teamId": 22
+    },
+    {
+        "name": "Nick Bjugstad",
+        "id": 8475760,
+        "teamId": 22
+    },
+    {
+        "name": "Zach Hyman",
+        "id": 8475786,
+        "teamId": 22
+    },
+    {
+        "name": "Jack Campbell",
+        "id": 8475789,
+        "teamId": 22
+    },
+    {
+        "name": "Ryan Nugent-Hopkins",
+        "id": 8476454,
+        "teamId": 22
+    },
+    {
+        "name": "Cody Ceci",
+        "id": 8476879,
+        "teamId": 22
+    },
+    {
+        "name": "Devin Shore",
+        "id": 8476913,
+        "teamId": 22
+    },
+    {
+        "name": "Brett Kulak",
+        "id": 8476967,
+        "teamId": 22
+    },
+    {
+        "name": "Mattias Janmark",
+        "id": 8477406,
+        "teamId": 22
+    },
+    {
+        "name": "Darnell Nurse",
+        "id": 8477498,
+        "teamId": 22
+    },
+    {
+        "name": "Leon Draisaitl",
+        "id": 8477934,
+        "teamId": 22
+    },
+    {
+        "name": "Warren Foegele",
+        "id": 8477998,
+        "teamId": 22
+    },
+    {
+        "name": "Connor McDavid",
+        "id": 8478402,
+        "teamId": 22
+    },
+    {
+        "name": "Derek Ryan",
+        "id": 8478585,
+        "teamId": 22
+    },
+    {
+        "name": "Markus Niemelainen",
+        "id": 8479338,
+        "teamId": 22
+    },
+    {
+        "name": "Cam Dineen",
+        "id": 8479341,
+        "teamId": 22
+    },
+    {
+        "name": "Vincent Desharnais",
+        "id": 8479576,
+        "teamId": 22
+    },
+    {
+        "name": "Stuart Skinner",
+        "id": 8479973,
+        "teamId": 22
+    },
+    {
+        "name": "Kailer Yamamoto",
+        "id": 8479977,
+        "teamId": 22
+    },
+    {
+        "name": "Klim Kostin",
+        "id": 8480011,
+        "teamId": 22
+    },
+    {
+        "name": "Philip Kemp",
+        "id": 8480274,
+        "teamId": 22
+    },
+    {
+        "name": "James Hamblin",
+        "id": 8480468,
+        "teamId": 22
+    },
+    {
+        "name": "Ryan McLeod",
+        "id": 8480802,
+        "teamId": 22
+    },
+    {
+        "name": "Evan Bouchard",
+        "id": 8480803,
+        "teamId": 22
+    },
+    {
+        "name": "Olivier Rodrigue",
+        "id": 8480885,
+        "teamId": 22
+    },
+    {
+        "name": "Raphael Lavoie",
+        "id": 8481534,
+        "teamId": 22
+    },
+    {
+        "name": "Philip Broberg",
+        "id": 8481598,
+        "teamId": 22
+    },
+    {
+        "name": "Dylan Holloway",
+        "id": 8482077,
+        "teamId": 22
+    },
+    {
+        "name": "Tanner Pearson",
+        "id": 8476871,
+        "teamId": 23
+    },
+    {
+        "name": "Tucker Poolman",
+        "id": 8477359,
+        "teamId": 23
+    },
+    {
+        "name": "Travis Dermott",
+        "id": 8478408,
+        "teamId": 23
+    },
+    {
+        "name": "Ilya Mikheyev",
+        "id": 8481624,
+        "teamId": 23
+    },
+    {
+        "name": "Tyler Myers",
+        "id": 8474574,
+        "teamId": 23
+    },
+    {
+        "name": "J.T. Miller",
+        "id": 8476468,
+        "teamId": 23
+    },
+    {
+        "name": "Phillip Di Giuseppe",
+        "id": 8476858,
+        "teamId": 23
+    },
+    {
+        "name": "Kyle Burroughs",
+        "id": 8477335,
+        "teamId": 23
+    },
+    {
+        "name": "Thatcher Demko",
+        "id": 8477967,
+        "teamId": 23
+    },
+    {
+        "name": "Dakota Joshua",
+        "id": 8478057,
+        "teamId": 23
+    },
+    {
+        "name": "Brock Boeser",
+        "id": 8478444,
+        "teamId": 23
+    },
+    {
+        "name": "Ethan Bear",
+        "id": 8478451,
+        "teamId": 23
+    },
+    {
+        "name": "Anthony Beauvillier",
+        "id": 8478463,
+        "teamId": 23
+    },
+    {
+        "name": "Guillaume Brisebois",
+        "id": 8478465,
+        "teamId": 23
+    },
+    {
+        "name": "Conor Garland",
+        "id": 8478856,
+        "teamId": 23
+    },
+    {
+        "name": "Filip Hronek",
+        "id": 8479425,
+        "teamId": 23
+    },
+    {
+        "name": "Elias Pettersson",
+        "id": 8480012,
+        "teamId": 23
+    },
+    {
+        "name": "Jack Studnicka",
+        "id": 8480021,
+        "teamId": 23
+    },
+    {
+        "name": "Sheldon Dries",
+        "id": 8480326,
+        "teamId": 23
+    },
+    {
+        "name": "Collin Delia",
+        "id": 8480420,
+        "teamId": 23
+    },
+    {
+        "name": "Quinn Hughes",
+        "id": 8480800,
+        "teamId": 23
+    },
+    {
+        "name": "Vitali Kravtsov",
+        "id": 8480833,
+        "teamId": 23
+    },
+    {
+        "name": "Vasily Podkolzin",
+        "id": 8481617,
+        "teamId": 23
+    },
+    {
+        "name": "Aidan McDonough",
+        "id": 8481683,
+        "teamId": 23
+    },
+    {
+        "name": "Nils Aman",
+        "id": 8482496,
+        "teamId": 23
+    },
+    {
+        "name": "Andrei Kuzmenko",
+        "id": 8483808,
+        "teamId": 23
+    },
+    {
+        "name": "Akito Hirose",
+        "id": 8484254,
+        "teamId": 23
+    },
+    {
+        "name": "Cole McWard",
+        "id": 8484287,
+        "teamId": 23
+    },
+    {
+        "name": "Urho Vaakanainen",
+        "id": 8480001,
+        "teamId": 24
+    },
+    {
+        "name": "Kevin Shattenkirk",
+        "id": 8474031,
+        "teamId": 24
+    },
+    {
+        "name": "Adam Henrique",
+        "id": 8474641,
+        "teamId": 24
+    },
+    {
+        "name": "Derek Grant",
+        "id": 8474683,
+        "teamId": 24
+    },
+    {
+        "name": "Jakob Silfverberg",
+        "id": 8475164,
+        "teamId": 24
+    },
+    {
+        "name": "Cam Fowler",
+        "id": 8475764,
+        "teamId": 24
+    },
+    {
+        "name": "Sam Carrick",
+        "id": 8475842,
+        "teamId": 24
+    },
+    {
+        "name": "John Gibson",
+        "id": 8476434,
+        "teamId": 24
+    },
+    {
+        "name": "Scott Harrington",
+        "id": 8476449,
+        "teamId": 24
+    },
+    {
+        "name": "Ryan Strome",
+        "id": 8476458,
+        "teamId": 24
+    },
+    {
+        "name": "Nathan Beaulieu",
+        "id": 8476470,
+        "teamId": 24
+    },
+    {
+        "name": "Anthony Stolarz",
+        "id": 8476932,
+        "teamId": 24
+    },
+    {
+        "name": "Brock McGinn",
+        "id": 8476934,
+        "teamId": 24
+    },
+    {
+        "name": "Jayson Megna",
+        "id": 8477126,
+        "teamId": 24
+    },
+    {
+        "name": "Frank Vatrano",
+        "id": 8478366,
+        "teamId": 24
+    },
+    {
+        "name": "Colton White",
+        "id": 8478841,
+        "teamId": 24
+    },
+    {
+        "name": "Troy Terry",
+        "id": 8478873,
+        "teamId": 24
+    },
+    {
+        "name": "Max Jones",
+        "id": 8479368,
+        "teamId": 24
+    },
+    {
+        "name": "Max Comtois",
+        "id": 8480031,
+        "teamId": 24
+    },
+    {
+        "name": "Isac Lundestrom",
+        "id": 8480806,
+        "teamId": 24
+    },
+    {
+        "name": "Lukas Dostal",
+        "id": 8480843,
+        "teamId": 24
+    },
+    {
+        "name": "Simon Benoit",
+        "id": 8481122,
+        "teamId": 24
+    },
+    {
+        "name": "Brett Leason",
+        "id": 8481517,
+        "teamId": 24
+    },
+    {
+        "name": "Trevor Zegras",
+        "id": 8481533,
+        "teamId": 24
+    },
+    {
+        "name": "Jackson LaCombe",
+        "id": 8481605,
+        "teamId": 24
+    },
+    {
+        "name": "Nikita Nesterenko",
+        "id": 8481754,
+        "teamId": 24
+    },
+    {
+        "name": "Jamie Drysdale",
+        "id": 8482142,
+        "teamId": 24
+    },
+    {
+        "name": "Mason McTavish",
+        "id": 8482745,
+        "teamId": 24
+    },
+    {
+        "name": "Ryan Suter",
+        "id": 8470600,
+        "teamId": 25
+    },
+    {
+        "name": "Joe Pavelski",
+        "id": 8470794,
+        "teamId": 25
+    },
+    {
+        "name": "Jamie Benn",
+        "id": 8473994,
+        "teamId": 25
+    },
+    {
+        "name": "Evgenii Dadonov",
+        "id": 8474149,
+        "teamId": 25
+    },
+    {
+        "name": "Alexander Petrovic",
+        "id": 8475755,
+        "teamId": 25
+    },
+    {
+        "name": "Tyler Seguin",
+        "id": 8475794,
+        "teamId": 25
+    },
+    {
+        "name": "Scott Wedgewood",
+        "id": 8475809,
+        "teamId": 25
+    },
+    {
+        "name": "Jani Hakanpää",
+        "id": 8475825,
+        "teamId": 25
+    },
+    {
+        "name": "Colin Miller",
+        "id": 8476525,
+        "teamId": 25
+    },
+    {
+        "name": "Luke Glendening",
+        "id": 8476822,
+        "teamId": 25
+    },
+    {
+        "name": "Radek Faksa",
+        "id": 8476889,
+        "teamId": 25
+    },
+    {
+        "name": "Esa Lindell",
+        "id": 8476902,
+        "teamId": 25
+    },
+    {
+        "name": "Max Domi",
+        "id": 8477503,
+        "teamId": 25
+    },
+    {
+        "name": "Joel Hanley",
+        "id": 8477810,
+        "teamId": 25
+    },
+    {
+        "name": "Roope Hintz",
+        "id": 8478449,
+        "teamId": 25
+    },
+    {
+        "name": "Ryan Shea",
+        "id": 8478854,
+        "teamId": 25
+    },
+    {
+        "name": "Mason Marchment",
+        "id": 8478975,
+        "teamId": 25
+    },
+    {
+        "name": "Riley Tufte",
+        "id": 8479362,
+        "teamId": 25
+    },
+    {
+        "name": "Dylan Wells",
+        "id": 8479380,
+        "teamId": 25
+    },
+    {
+        "name": "Rhett Gardner",
+        "id": 8479587,
+        "teamId": 25
+    },
+    {
+        "name": "Jake Oettinger",
+        "id": 8479979,
+        "teamId": 25
+    },
+    {
+        "name": "Jason Robertson",
+        "id": 8480027,
+        "teamId": 25
+    },
+    {
+        "name": "Miro Heiskanen",
+        "id": 8480036,
+        "teamId": 25
+    },
+    {
+        "name": "Marián Studenič",
+        "id": 8480226,
+        "teamId": 25
+    },
+    {
+        "name": "Oskar Back",
+        "id": 8480840,
+        "teamId": 25
+    },
+    {
+        "name": "Ty Dellandrea",
+        "id": 8480848,
+        "teamId": 25
+    },
+    {
+        "name": "Nils Lundkvist",
+        "id": 8480878,
+        "teamId": 25
+    },
+    {
+        "name": "Thomas Harley",
+        "id": 8481581,
+        "teamId": 25
+    },
+    {
+        "name": "Joel Kiviranta",
+        "id": 8481641,
+        "teamId": 25
+    },
+    {
+        "name": "Matej Blumel",
+        "id": 8481712,
+        "teamId": 25
+    },
+    {
+        "name": "Mavrik Bourque",
+        "id": 8482145,
+        "teamId": 25
+    },
+    {
+        "name": "Wyatt Johnston",
+        "id": 8482740,
+        "teamId": 25
+    },
+    {
+        "name": "Matt Murray",
+        "id": 8483575,
+        "teamId": 25
+    },
+    {
+        "name": "Alexander Edler",
+        "id": 8471303,
+        "teamId": 26
+    },
+    {
+        "name": "Anze Kopitar",
+        "id": 8471685,
+        "teamId": 26
+    },
+    {
+        "name": "Drew Doughty",
+        "id": 8474563,
+        "teamId": 26
+    },
+    {
+        "name": "Phillip Danault",
+        "id": 8476479,
+        "teamId": 26
+    },
+    {
+        "name": "Joonas Korpisalo",
+        "id": 8476914,
+        "teamId": 26
+    },
+    {
+        "name": "Pheonix Copley",
+        "id": 8477831,
+        "teamId": 26
+    },
+    {
+        "name": "Kevin Fiala",
+        "id": 8477942,
+        "teamId": 26
+    },
+    {
+        "name": "Adrian Kempe",
+        "id": 8477960,
+        "teamId": 26
+    },
+    {
+        "name": "Viktor Arvidsson",
+        "id": 8478042,
+        "teamId": 26
+    },
+    {
+        "name": "Vladislav Gavrikov",
+        "id": 8478882,
+        "teamId": 26
+    },
+    {
+        "name": "Matt Roy",
+        "id": 8478911,
+        "teamId": 26
+    },
+    {
+        "name": "Carl Grundstrom",
+        "id": 8479336,
+        "teamId": 26
+    },
+    {
+        "name": "Pierre-Luc Dubois",
+        "id": 8479400,
+        "teamId": 26
+    },
+    {
+        "name": "Jacob Moverare",
+        "id": 8479421,
+        "teamId": 26
+    },
+    {
+        "name": "Trevor Moore",
+        "id": 8479675,
+        "teamId": 26
+    },
+    {
+        "name": "Zack MacEwen",
+        "id": 8479772,
+        "teamId": 26
+    },
+    {
+        "name": "Jaret Anderson-Dolan",
+        "id": 8479994,
+        "teamId": 26
+    },
+    {
+        "name": "Mikey Anderson",
+        "id": 8479998,
+        "teamId": 26
+    },
+    {
+        "name": "Blake Lizotte",
+        "id": 8481481,
+        "teamId": 26
+    },
+    {
+        "name": "Arthur Kaliyev",
+        "id": 8481560,
+        "teamId": 26
+    },
+    {
+        "name": "Tobias Bjornfot",
+        "id": 8481600,
+        "teamId": 26
+    },
+    {
+        "name": "Jordan Spence",
+        "id": 8481606,
+        "teamId": 26
+    },
+    {
+        "name": "Erik Portillo",
+        "id": 8481707,
+        "teamId": 26
+    },
+    {
+        "name": "Andre Lee",
+        "id": 8481732,
+        "teamId": 26
+    },
+    {
+        "name": "Quinton Byfield",
+        "id": 8482124,
+        "teamId": 26
+    },
+    {
+        "name": "Alex Laferriere",
+        "id": 8482155,
+        "teamId": 26
+    },
+    {
+        "name": "Samuel Helenius",
+        "id": 8482726,
+        "teamId": 26
+    },
+    {
+        "name": "Francesco Pinelli",
+        "id": 8482748,
+        "teamId": 26
+    },
+    {
+        "name": "Markus Nutivaara",
+        "id": 8478906,
+        "teamId": 28
+    },
+    {
+        "name": "Luke Kunin",
+        "id": 8479316,
+        "teamId": 28
+    },
+    {
+        "name": "Jonah Gadjovich",
+        "id": 8479981,
+        "teamId": 28
+    },
+    {
+        "name": "Kyle Criscuolo",
+        "id": 8479304,
+        "teamId": 28
+    },
+    {
+        "name": "Marc-Edouard Vlasic",
+        "id": 8471709,
+        "teamId": 28
+    },
+    {
+        "name": "James Reimer",
+        "id": 8473503,
+        "teamId": 28
+    },
+    {
+        "name": "Logan Couture",
+        "id": 8474053,
+        "teamId": 28
+    },
+    {
+        "name": "Erik Karlsson",
+        "id": 8474578,
+        "teamId": 28
+    },
+    {
+        "name": "Tomas Hertl",
+        "id": 8476881,
+        "teamId": 28
+    },
+    {
+        "name": "Matt Benning",
+        "id": 8476988,
+        "teamId": 28
+    },
+    {
+        "name": "Andreas Johnsson",
+        "id": 8477341,
+        "teamId": 28
+    },
+    {
+        "name": "Kaapo Kahkonen",
+        "id": 8478039,
+        "teamId": 28
+    },
+    {
+        "name": "Oskar Lindblom",
+        "id": 8478067,
+        "teamId": 28
+    },
+    {
+        "name": "Kevin Labanc",
+        "id": 8478099,
+        "teamId": 28
+    },
+    {
+        "name": "Mackenzie Blackwood",
+        "id": 8478406,
+        "teamId": 28
+    },
+    {
+        "name": "Evgeny Svechnikov",
+        "id": 8478431,
+        "teamId": 28
+    },
+    {
+        "name": "Steven Lorentz",
+        "id": 8478904,
+        "teamId": 28
+    },
+    {
+        "name": "Noah Gregor",
+        "id": 8479393,
+        "teamId": 28
+    },
+    {
+        "name": "Jacob MacDonald",
+        "id": 8479439,
+        "teamId": 28
+    },
+    {
+        "name": "Jeffrey Viel",
+        "id": 8479705,
+        "teamId": 28
+    },
+    {
+        "name": "Mario Ferraro",
+        "id": 8479983,
+        "teamId": 28
+    },
+    {
+        "name": "Radim Simek",
+        "id": 8480160,
+        "teamId": 28
+    },
+    {
+        "name": "Fabian Zetterlund",
+        "id": 8480188,
+        "teamId": 28
+    },
+    {
+        "name": "Jacob Peterson",
+        "id": 8480216,
+        "teamId": 28
+    },
+    {
+        "name": "Nico Sturm",
+        "id": 8481477,
+        "teamId": 28
+    },
+    {
+        "name": "Henry Thrun",
+        "id": 8481567,
+        "teamId": 28
+    },
+    {
+        "name": "Nikolai Knyzhov",
+        "id": 8481812,
+        "teamId": 28
+    },
+    {
+        "name": "Alexander Barabanov",
+        "id": 8482222,
+        "teamId": 28
+    },
+    {
+        "name": "Zach Werenski",
+        "id": 8478460,
+        "teamId": 29
+    },
+    {
+        "name": "Jake Bean",
+        "id": 8479402,
+        "teamId": 29
+    },
+    {
+        "name": "Justin Danforth",
+        "id": 8479941,
+        "teamId": 29
+    },
+    {
+        "name": "Michael Hutchinson",
+        "id": 8474636,
+        "teamId": 29
+    },
+    {
+        "name": "Erik Gudbranson",
+        "id": 8475790,
+        "teamId": 29
+    },
+    {
+        "name": "Johnny Gaudreau",
+        "id": 8476346,
+        "teamId": 29
+    },
+    {
+        "name": "Sean Kuraly",
+        "id": 8476374,
+        "teamId": 29
+    },
+    {
+        "name": "Boone Jenner",
+        "id": 8476432,
+        "teamId": 29
+    },
+    {
+        "name": "Jon Gillies",
+        "id": 8476903,
+        "teamId": 29
+    },
+    {
+        "name": "Damon Severson",
+        "id": 8476923,
+        "teamId": 29
+    },
+    {
+        "name": "Elvis Merzlikins",
+        "id": 8478007,
+        "teamId": 29
+    },
+    {
+        "name": "Jack Roslovic",
+        "id": 8478458,
+        "teamId": 29
+    },
+    {
+        "name": "Ivan Provorov",
+        "id": 8478500,
+        "teamId": 29
+    },
+    {
+        "name": "Lane Pederson",
+        "id": 8478967,
+        "teamId": 29
+    },
+    {
+        "name": "Patrik Laine",
+        "id": 8479339,
+        "teamId": 29
+    },
+    {
+        "name": "Andrew Peeke",
+        "id": 8479369,
+        "teamId": 29
+    },
+    {
+        "name": "Mathieu Olivier",
+        "id": 8479671,
+        "teamId": 29
+    },
+    {
+        "name": "Gavin Bayreuther",
+        "id": 8479945,
+        "teamId": 29
+    },
+    {
+        "name": "Emil Bemstrom",
+        "id": 8480205,
+        "teamId": 29
+    },
+    {
+        "name": "Eric Robinson",
+        "id": 8480762,
+        "teamId": 29
+    },
+    {
+        "name": "Liam Foudy",
+        "id": 8480853,
+        "teamId": 29
+    },
+    {
+        "name": "Adam Boqvist",
+        "id": 8480871,
+        "teamId": 29
+    },
+    {
+        "name": "Kirill Marchenko",
+        "id": 8480893,
+        "teamId": 29
+    },
+    {
+        "name": "Tim Berni",
+        "id": 8481072,
+        "teamId": 29
+    },
+    {
+        "name": "Kent Johnson",
+        "id": 8482660,
+        "teamId": 29
+    },
+    {
+        "name": "Nick Blankenburg",
+        "id": 8483565,
+        "teamId": 29
+    },
+    {
+        "name": "Hunter McKown",
+        "id": 8484125,
+        "teamId": 29
+    },
+    {
+        "name": "Marc-Andre Fleury",
+        "id": 8470594,
+        "teamId": 30
+    },
+    {
+        "name": "Alex Goligoski",
+        "id": 8471274,
+        "teamId": 30
+    },
+    {
+        "name": "Ryan Reaves",
+        "id": 8471817,
+        "teamId": 30
+    },
+    {
+        "name": "Gustav Nyquist",
+        "id": 8474679,
+        "teamId": 30
+    },
+    {
+        "name": "Jared Spurgeon",
+        "id": 8474716,
+        "teamId": 30
+    },
+    {
+        "name": "Marcus Johansson",
+        "id": 8475149,
+        "teamId": 30
+    },
+    {
+        "name": "Marcus Foligno",
+        "id": 8475220,
+        "teamId": 30
+    },
+    {
+        "name": "Mats Zuccarello",
+        "id": 8475692,
+        "teamId": 30
+    },
+    {
+        "name": "Jon Merrill",
+        "id": 8475750,
+        "teamId": 30
+    },
+    {
+        "name": "John Klingberg",
+        "id": 8475906,
+        "teamId": 30
+    },
+    {
+        "name": "Jonas Brodin",
+        "id": 8476463,
+        "teamId": 30
+    },
+    {
+        "name": "Matt Dumba",
+        "id": 8476856,
+        "teamId": 30
+    },
+    {
+        "name": "Oskar Sundqvist",
+        "id": 8476897,
+        "teamId": 30
+    },
+    {
+        "name": "Ryan Hartman",
+        "id": 8477451,
+        "teamId": 30
+    },
+    {
+        "name": "Frederick Gaudreau",
+        "id": 8477919,
+        "teamId": 30
+    },
+    {
+        "name": "Jake Middleton",
+        "id": 8478136,
+        "teamId": 30
+    },
+    {
+        "name": "Joel Eriksson Ek",
+        "id": 8478493,
+        "teamId": 30
+    },
+    {
+        "name": "Kirill Kaprizov",
+        "id": 8478864,
+        "teamId": 30
+    },
+    {
+        "name": "Sam Steel",
+        "id": 8479351,
+        "teamId": 30
+    },
+    {
+        "name": "Filip Gustavsson",
+        "id": 8479406,
+        "teamId": 30
+    },
+    {
+        "name": "Brandon Duhaime",
+        "id": 8479520,
+        "teamId": 30
+    },
+    {
+        "name": "Mason Shaw",
+        "id": 8479972,
+        "teamId": 30
+    },
+    {
+        "name": "Calen Addison",
+        "id": 8480884,
+        "teamId": 30
+    },
+    {
+        "name": "Connor Dewar",
+        "id": 8480980,
+        "teamId": 30
+    },
+    {
+        "name": "Hunter Jones",
+        "id": 8481545,
+        "teamId": 30
+    },
+    {
+        "name": "Matt Boldy",
+        "id": 8481557,
+        "teamId": 30
+    },
+    {
+        "name": "Brock Faber",
+        "id": 8482122,
+        "teamId": 30
+    },
+    {
+        "name": "Jesper Wallstedt",
+        "id": 8482661,
+        "teamId": 30
+    },
+    {
+        "name": "Cole Perfetti",
+        "id": 8482149,
+        "teamId": 52
+    },
+    {
+        "name": "Blake Wheeler",
+        "id": 8471218,
+        "teamId": 52
+    },
+    {
+        "name": "Sam Gagner",
+        "id": 8474040,
+        "teamId": 52
+    },
+    {
+        "name": "Brenden Dillon",
+        "id": 8475455,
+        "teamId": 52
+    },
+    {
+        "name": "Nino Niederreiter",
+        "id": 8475799,
+        "teamId": 52
+    },
+    {
+        "name": "Dylan DeMelo",
+        "id": 8476331,
+        "teamId": 52
+    },
+    {
+        "name": "Adam Lowry",
+        "id": 8476392,
+        "teamId": 52
+    },
+    {
+        "name": "Mark Scheifele",
+        "id": 8476460,
+        "teamId": 52
+    },
+    {
+        "name": "Vladislav Namestnikov",
+        "id": 8476480,
+        "teamId": 52
+    },
+    {
+        "name": "Connor Hellebuyck",
+        "id": 8476945,
+        "teamId": 52
+    },
+    {
+        "name": "Nate Schmidt",
+        "id": 8477220,
+        "teamId": 52
+    },
+    {
+        "name": "Saku Maenalanen",
+        "id": 8477357,
+        "teamId": 52
+    },
+    {
+        "name": "Josh Morrissey",
+        "id": 8477504,
+        "teamId": 52
+    },
+    {
+        "name": "Nikolaj Ehlers",
+        "id": 8477940,
+        "teamId": 52
+    },
+    {
+        "name": "Kyle Connor",
+        "id": 8478398,
+        "teamId": 52
+    },
+    {
+        "name": "Kyle Capobianco",
+        "id": 8478476,
+        "teamId": 52
+    },
+    {
+        "name": "Kevin Stenlund",
+        "id": 8478831,
+        "teamId": 52
+    },
+    {
+        "name": "Mason Appleton",
+        "id": 8478891,
+        "teamId": 52
+    },
+    {
+        "name": "Logan Stanley",
+        "id": 8479378,
+        "teamId": 52
+    },
+    {
+        "name": "David Rittich",
+        "id": 8479496,
+        "teamId": 52
+    },
+    {
+        "name": "Axel Jonsson-Fjallby",
+        "id": 8479536,
+        "teamId": 52
+    },
+    {
+        "name": "Gabriel Vilardi",
+        "id": 8480014,
+        "teamId": 52
+    },
+    {
+        "name": "Dylan Samberg",
+        "id": 8480049,
+        "teamId": 52
+    },
+    {
+        "name": "Alex Iafallo",
+        "id": 8480113,
+        "teamId": 52
+    },
+    {
+        "name": "Neal Pionk",
+        "id": 8480145,
+        "teamId": 52
+    },
+    {
+        "name": "Morgan Barron",
+        "id": 8480289,
+        "teamId": 52
+    },
+    {
+        "name": "Rasmus Kupari",
+        "id": 8480845,
+        "teamId": 52
+    },
+    {
+        "name": "Karson Kuhlman",
+        "id": 8480901,
+        "teamId": 52
+    },
+    {
+        "name": "David Gustafsson",
+        "id": 8481019,
+        "teamId": 52
+    },
+    {
+        "name": "Michael Carcone",
+        "id": 8479619,
+        "teamId": 53
+    },
+    {
+        "name": "Travis Boyd",
+        "id": 8476329,
+        "teamId": 53
+    },
+    {
+        "name": "Brett Ritchie",
+        "id": 8476439,
+        "teamId": 53
+    },
+    {
+        "name": "Liam O'Brien",
+        "id": 8477070,
+        "teamId": 53
+    },
+    {
+        "name": "Josh Brown",
+        "id": 8477384,
+        "teamId": 53
+    },
+    {
+        "name": "Nick Schmaltz",
+        "id": 8477951,
+        "teamId": 53
+    },
+    {
+        "name": "Christian Fischer",
+        "id": 8478432,
+        "teamId": 53
+    },
+    {
+        "name": "Lawson Crouse",
+        "id": 8478474,
+        "teamId": 53
+    },
+    {
+        "name": "Karel Vejmelka",
+        "id": 8478872,
+        "teamId": 53
+    },
+    {
+        "name": "Connor Ingram",
+        "id": 8478971,
+        "teamId": 53
+    },
+    {
+        "name": "Clayton Keller",
+        "id": 8479343,
+        "teamId": 53
+    },
+    {
+        "name": "Juuso Valimaki",
+        "id": 8479976,
+        "teamId": 53
+    },
+    {
+        "name": "Sean Durzi",
+        "id": 8480434,
+        "teamId": 53
+    },
+    {
+        "name": "Barrett Hayton",
+        "id": 8480849,
+        "teamId": 53
+    },
+    {
+        "name": "Jack McBain",
+        "id": 8480855,
+        "teamId": 53
+    },
+    {
+        "name": "Matias Maccelli",
+        "id": 8481711,
+        "teamId": 53
+    },
+    {
+        "name": "Connor Mackey",
+        "id": 8482067,
+        "teamId": 53
+    },
+    {
+        "name": "J.J. Moser",
+        "id": 8482655,
+        "teamId": 53
+    },
+    {
+        "name": "Jonathan Quick",
+        "id": 8471734,
+        "teamId": 54
+    },
+    {
+        "name": "Phil Kessel",
+        "id": 8473548,
+        "teamId": 54
+    },
+    {
+        "name": "Alec Martinez",
+        "id": 8474166,
+        "teamId": 54
+    },
+    {
+        "name": "Alex Pietrangelo",
+        "id": 8474565,
+        "teamId": 54
+    },
+    {
+        "name": "Brayden McNabb",
+        "id": 8475188,
+        "teamId": 54
+    },
+    {
+        "name": "Reilly Smith",
+        "id": 8475191,
+        "teamId": 54
+    },
+    {
+        "name": "Mark Stone",
+        "id": 8475913,
+        "teamId": 54
+    },
+    {
+        "name": "Laurent Brossoit",
+        "id": 8476316,
+        "teamId": 54
+    },
+    {
+        "name": "William Karlsson",
+        "id": 8476448,
+        "teamId": 54
+    },
+    {
+        "name": "Jonathan Marchessault",
+        "id": 8476539,
+        "teamId": 54
+    },
+    {
+        "name": "Chandler Stephenson",
+        "id": 8476905,
+        "teamId": 54
+    },
+    {
+        "name": "Teddy Blueger",
+        "id": 8476927,
+        "teamId": 54
+    },
+    {
+        "name": "Ben Hutton",
+        "id": 8477018,
+        "teamId": 54
+    },
+    {
+        "name": "Shea Theodore",
+        "id": 8477447,
+        "teamId": 54
+    },
+    {
+        "name": "William Carrier",
+        "id": 8477478,
+        "teamId": 54
+    },
+    {
+        "name": "Ivan Barbashev",
+        "id": 8477964,
+        "teamId": 54
+    },
+    {
+        "name": "Michael Amadio",
+        "id": 8478020,
+        "teamId": 54
+    },
+    {
+        "name": "Jack Eichel",
+        "id": 8478403,
+        "teamId": 54
+    },
+    {
+        "name": "Keegan Kolesar",
+        "id": 8478434,
+        "teamId": 54
+    },
+    {
+        "name": "Nicolas Roy",
+        "id": 8478462,
+        "teamId": 54
+    },
+    {
+        "name": "Adin Hill",
+        "id": 8478499,
+        "teamId": 54
+    },
+    {
+        "name": "Brett Howden",
+        "id": 8479353,
+        "teamId": 54
+    },
+    {
+        "name": "Nicolas Hague",
+        "id": 8479980,
+        "teamId": 54
+    },
+    {
+        "name": "Jiri Patera",
+        "id": 8480238,
+        "teamId": 54
+    },
+    {
+        "name": "Logan Thompson",
+        "id": 8480313,
+        "teamId": 54
+    },
+    {
+        "name": "Zach Whitecloud",
+        "id": 8480727,
+        "teamId": 54
+    },
+    {
+        "name": "Paul Cotter",
+        "id": 8481032,
+        "teamId": 54
+    },
+    {
+        "name": "Brayden Pachal",
+        "id": 8481167,
+        "teamId": 54
+    },
+    {
+        "name": "Joonas Donskoi",
+        "id": 8475820,
+        "teamId": 55
+    },
+    {
+        "name": "Andre Burakovsky",
+        "id": 8477444,
+        "teamId": 55
+    },
+    {
+        "name": "Jordan Eberle",
+        "id": 8474586,
+        "teamId": 55
+    },
+    {
+        "name": "Justin Schultz",
+        "id": 8474602,
+        "teamId": 55
+    },
+    {
+        "name": "Martin Jones",
+        "id": 8474889,
+        "teamId": 55
+    },
+    {
+        "name": "Jaden Schwartz",
+        "id": 8475768,
+        "teamId": 55
+    },
+    {
+        "name": "Philipp Grubauer",
+        "id": 8475831,
+        "teamId": 55
+    },
+    {
+        "name": "Adam Larsson",
+        "id": 8476457,
+        "teamId": 55
+    },
+    {
+        "name": "Jamie Oleksiak",
+        "id": 8476467,
+        "teamId": 55
+    },
+    {
+        "name": "Yanni Gourde",
+        "id": 8476826,
+        "teamId": 55
+    },
+    {
+        "name": "Jaycob Megna",
+        "id": 8477034,
+        "teamId": 55
+    },
+    {
+        "name": "Carson Soucy",
+        "id": 8477369,
+        "teamId": 55
+    },
+    {
+        "name": "Oliver Bjorkstrand",
+        "id": 8477416,
+        "teamId": 55
+    },
+    {
+        "name": "Alex Wennberg",
+        "id": 8477505,
+        "teamId": 55
+    },
+    {
+        "name": "Jared McCann",
+        "id": 8477955,
+        "teamId": 55
+    },
+    {
+        "name": "Ryan Donato",
+        "id": 8477987,
+        "teamId": 55
+    },
+    {
+        "name": "Vince Dunn",
+        "id": 8478407,
+        "teamId": 55
+    },
+    {
+        "name": "Daniel Sprong",
+        "id": 8478466,
+        "teamId": 55
+    },
+    {
+        "name": "Will Borgen",
+        "id": 8478840,
+        "teamId": 55
+    },
+    {
+        "name": "Brandon Tanev",
+        "id": 8479293,
+        "teamId": 55
+    },
+    {
+        "name": "Cale Fleury",
+        "id": 8479985,
+        "teamId": 55
+    },
+    {
+        "name": "Morgan Geekie",
+        "id": 8479987,
+        "teamId": 55
+    },
+    {
+        "name": "Eeli Tolvanen",
+        "id": 8480009,
+        "teamId": 55
+    },
+    {
+        "name": "Matty Beniers",
+        "id": 8482665,
+        "teamId": 55
+    }
+]

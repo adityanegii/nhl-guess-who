@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
-import { fetchPlayerIds, getRandomPlayerTeams, getGuessInfo } from './api/helperFunctions'
+import { fetchPlayerIds, getRandomPlayerTeams, getGuessInfo } from '../helpers/helperFunctions'
 import styles from '../styles/WhereWereYou.module.css'
 import EndGamePopUp from '../components/EndGamePopUp'
 import Script from 'next/script'
@@ -23,13 +23,22 @@ export default function WhereWereYou() {
   const [won, setWon] = useState(false);
 
   useEffect(() => {
-    fetchPlayerIds().then((res) => {
-      if (res!=null) {
-        setPlayerData(res);
-        setPlayerIds(res.map((player) => player.id));
-        setPlayerNames(res.map((player) => player.name));
-      }
-    })
+    fetch('/api/staticData')
+    .then(response => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error('Error: ' + response.status);
+        }
+      })
+      .then(data => {
+        setPlayerData(data);
+        setPlayerIds(data.map((player) => player.id));
+        setPlayerNames(data.map((player) => player.name));
+      })
+      .catch(error => {
+        console.error(error); // Handle any errors
+      });
   }, []);
 
   useEffect(() => {
@@ -156,25 +165,25 @@ export default function WhereWereYou() {
                 </div>
               </div>
 
-              <div>
+              <div className={styles.guesses}>
                 <table>
                   <tbody>
                     {
                       guesses.map((guess, index) => (
                         <tr key={index}>
                           {console.log(guess.division)}
-                          <td>
+                          <td className={styles.item}>
                             <img src={`/${guess.division}.png`} 
                             alt = "Player Division"
                             height="70px"/>
                           </td>
-                          <td>
+                          <td className={styles.item}>
                             <img
                             src={`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${guess.playerId}@2x.png`}
                             alt="Player Headshot"
                             height="70px"/>
                           </td>
-                          <td>
+                          <td className={styles.item}>
                             <img
                             src={`https://www-league.nhlstatic.com/images/logos/teams-current-primary-light/${guess.teamId}.svg`}
                             alt="Player Team logo"

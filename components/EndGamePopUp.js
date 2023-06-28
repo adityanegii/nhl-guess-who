@@ -27,7 +27,7 @@ export default function EndGamePopUp({props, playerInfo, page}) {
             <h3>You guessed it right!</h3>
             <div>
                 <a href="/"><img src="return.svg" alt="return button" height="40px" /></a>
-                <a href="/guessWho"><img src='reload.svg' alt='reload button' height="40px" /></a>
+                <a href={page}><img src='reload.svg' alt='reload button' height="40px" /></a>
             </div>
             </div>
         );

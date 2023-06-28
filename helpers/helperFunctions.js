@@ -1,9 +1,10 @@
+// Function to get players from NHL API, return array of JSON objects [name, id, teamId]
 export const fetchPlayerIds = async () => {
     const response = await fetch("https://statsapi.web.nhl.com/api/v1/teams/");
     const data = await response.json();
     let teamIDs = data.teams.map((team) => team.id);
   
-    let players = [];
+    let playerList = [];
   
     for (let i = 0; i < teamIDs.length; i++) {
       const response = await fetch(
@@ -18,13 +19,14 @@ export const fetchPlayerIds = async () => {
           id: player.person.id,
           teamId: teamIDs[i]
         };
-        players.push(playerData);
+        playerList.push(playerData);
       });
     }
-  
-    return players;
+    
+    return playerList;
   };
 
+// Function to choose random player, return JSON object with player info
 export async function getRandomPlayerTeams(playerIDs) {
     if (playerIDs.length != 0) {
         const pIds = Array.from(playerIDs)
@@ -139,6 +141,7 @@ const aggregateTeamTotals = playerData => {
 
     return aggregatedData;
 }
+
 
 export async function getGuessInfo(playerId) {
     const response = await fetch("https://statsapi.web.nhl.com/api/v1/people/" + playerId);

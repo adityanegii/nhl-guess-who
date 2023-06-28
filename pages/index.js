@@ -1,8 +1,25 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
+import { useEffect } from 'react'
 
 export default function Home() {
+  useEffect(() => {
+    fetch('/api/fetchPlayers')
+      .then(response => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error('Error: ' + response.status);
+        }
+      })
+      .then(data => {
+        console.log(data); // Process the response data
+      })
+      .catch(error => {
+        console.error(error); // Handle any errors
+      });
+  }, []);
   
   return (
     <div>
