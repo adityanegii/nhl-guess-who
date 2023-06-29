@@ -30,7 +30,7 @@ export default function Home() {
       </Head>
 
       <section>
-        <a style={{margin: "10px"}} href='/'><img src='home.svg' alt='home button' height='50px'/></a>
+        <Link style={{margin: "10px"}} href='/'><img src='home.svg' alt='home button' height='50px'/></Link>
       </section>
 
       <section className= {styles.container}>
