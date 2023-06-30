@@ -38,7 +38,7 @@ export default function Home() {
 
       <section className= {styles.container}>
         <Link href="/guessWho"><button className={styles.button}><h2>NHL Guess Who?</h2></button></Link>
-        <Link href="/whereWereYou"><button className={styles.button}><h2>NHL Where Were You?</h2></button></Link>
+        <Link href="/teamHopper"><button className={styles.button}><h2>NHL Where Were You?</h2></button></Link>
       </section>
     </div>
   )

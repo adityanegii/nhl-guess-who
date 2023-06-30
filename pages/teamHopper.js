@@ -7,7 +7,7 @@ import Script from 'next/script'
 import Link from 'next/link'
 import Image from 'next/image'
 
-export default function WhereWereYou() {
+export default function TeamHopper() {
 
   const [numGuesses, setNumGuesses] = useState(0);
 
@@ -129,7 +129,7 @@ export default function WhereWereYou() {
   return (
     <div>
       <Head>
-        <title>NHL where were you</title>
+        <title>NHL Team Hopper</title>
         <meta name="description" content="Guess a player based on their career" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -202,7 +202,7 @@ export default function WhereWereYou() {
               </div>
             </div>
           }
-          {(numGuesses == maxGuesses || won==true) && <EndGamePopUp props={won} playerInfo={playerInfo} page="whereWereYou"/>}
+          {(numGuesses == maxGuesses || won==true) && <EndGamePopUp props={won} playerInfo={playerInfo} page="teamHopper"/>}
           </div>  
           
           <div className={styles.playerInfo}>
