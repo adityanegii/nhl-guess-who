@@ -4,6 +4,8 @@ import { fetchPlayerIds, getRandomPlayerTeams, getGuessInfo } from '../helpers/h
 import styles from '../styles/WhereWereYou.module.css'
 import EndGamePopUp from '../components/EndGamePopUp'
 import Script from 'next/script'
+import Link from 'next/link'
+import Image from 'next/image'
 
 export default function WhereWereYou() {
 
@@ -50,7 +52,7 @@ export default function WhereWereYou() {
           setSeasonsToShow(playerInfo.seasons.slice(0, numGuesses + 1));
         }
         });
-  }, [playerData]);
+  }, [playerIds]);
 
   useEffect(() => {
     if (interimGuess.length > 2) {
@@ -140,7 +142,7 @@ export default function WhereWereYou() {
       />
 
       <section>
-        <a style={{margin: "10px"}} href='/'><img src='home.svg' alt='home button' height='50px'/></a>
+        <Link style={{margin: "10px"}} href='/'><Image src='home.svg' alt='home button' height={50} width={50} /></Link>
       </section>
 
       <section className={styles.container}>
@@ -152,10 +154,11 @@ export default function WhereWereYou() {
                 <div>
                   {filteredPlayers.map((player, index) => (
                     <div key={index} className={styles.dropdownRow} onClick={() => handleClick(player)}>
-                      <img
+                      <Image
                         src={`https://www-league.nhlstatic.com/images/logos/teams-current-primary-light/${player.teamId}.svg`}
                         alt="Player Team logo"
-                        height="25px"
+                        height={40}
+                        width={40}
                         />
                       {highlightMatchingText(player.name, interimGuess)}
                     </div>
@@ -170,21 +173,26 @@ export default function WhereWereYou() {
                       guesses.map((player, index) => (
                         <tr key={index}>
                           <td className={player.id === playerInfo.playerId ? styles.correctCell : styles.incorrectCell}>
-                            <img
+                            <Image
                             src={`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${player.playerId}@2x.png`}
                             alt="Player Headshot"
-                            height="70px"/>
+                            height={50}
+                            width={50}
+                            />
                           </td>
                           <td className={player.division === playerInfo.division ? styles.correctCell : styles.incorrectCell}>
-                            <img src={`/${player.division}.png`} 
+                            <Image src={`/${player.division}.png`} 
                             alt = "Player Division"
-                            height="70px"/>
+                            height={50}
+                            width={50}
+                            />
                           </td>
                           <td className={player.team === playerInfo.team ? styles.correctCell : styles.incorrectCell}>
-                            <img
+                            <Image
                             src={`https://www-league.nhlstatic.com/images/logos/teams-current-primary-light/${player.teamId}.svg`}
                             alt="Player Team logo"
-                            height="70px"
+                            height={50}
+                            width={50}
                             />
                           </td>
                         </tr>

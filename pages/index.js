@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
 import { useEffect } from 'react'
+import Image from 'next/image'
 
 export default function Home() {
   useEffect(() => {
@@ -30,7 +31,9 @@ export default function Home() {
       </Head>
 
       <section>
-        <Link style={{margin: "10px"}} href='/'><img src='home.svg' alt='home button' height='50px'/></Link>
+        <div>
+          <Link style={{margin: "10px"}} href='/'><Image src='home.svg' alt='home button' height={50} width={50}/></Link>
+        </div>
       </section>
 
       <section className= {styles.container}>

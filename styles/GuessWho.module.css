@@ -70,8 +70,8 @@
 }
 
 .guesses th, .guesses td {
-    border: 1px solid #ddd;
-    padding: 8px;
+    border: 1px solid #ddd;;
+    padding: 4px;
 }
 
 .guesses tr:nth-child(even){background-color: #f2f2f2;}

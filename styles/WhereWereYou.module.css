@@ -30,7 +30,7 @@
 }
 
 .dropdownContainer {
-    height: 300px;
+    height: 250px;
     overflow: auto;
     scrollbar-width: thin;
 }
@@ -69,8 +69,8 @@
 }
 
 .playerInfo th, .playerInfo td {
-    border: 1px solid #ddd;
-    padding: 8px;
+    border: 1px solid black;
+    padding: 4px;
 }
 
 .playerInfo tr:nth-child(even){background-color: #f2f2f2;}
@@ -87,6 +87,9 @@
 
 .guesses table {
     border-collapse: collapse;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .guesses th, .guesses td {
     border: 1px solid #ddd;

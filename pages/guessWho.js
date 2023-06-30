@@ -1,9 +1,10 @@
 import Head from 'next/head'
 import styles from '../styles/GuessWho.module.css'
-import { fetchPlayerIds, getRandomPlayerTeams, getGuessInfo } from '../helpers/helperFunctions'
+import { getRandomPlayerTeams, getGuessInfo } from '../helpers/helperFunctions'
 import { useEffect, useState } from 'react'
 import EndGamePopUp from '../components/EndGamePopUp'
-
+import Link from 'next/link'
+import Image from 'next/image'
 import Script from 'next/script'
 
 export default function GuessWho({players}) {
@@ -47,7 +48,7 @@ export default function GuessWho({players}) {
           setPlayerInfo(playerInfo);
           console.log(playerInfo);
       });
-  }, [playerData]);
+  }, [playerIds]);
 
   const handleChange = (event) => {
     setInterimGuess(event.target.value);
@@ -130,7 +131,7 @@ export default function GuessWho({players}) {
       />
 
       <section>
-        <a style={{margin: "10px"}} href='/'><img src='home.svg' alt='home button' height='50px'/></a>
+        <Link style={{margin: "10px"}} href='/'><Image src='home.svg' alt='home button' height={50} width={50} /></Link>
       </section>
 
       <section className= {styles.container}>
@@ -142,10 +143,11 @@ export default function GuessWho({players}) {
               <div>
                 {filteredPlayers.map((player, index) => (
                   <div key={index} className={styles.dropdownRow} onClick={() => handleClick(player)}>
-                    <img
+                    <Image
                       src={`https://www-league.nhlstatic.com/images/logos/teams-current-primary-light/${player.teamId}.svg`}
                       alt="Player Team logo"
-                      height="25px"
+                      height={40}
+                      width={40}
                       />
                     {highlightMatchingText(player.name, interimGuess)}
                   </div>
@@ -177,33 +179,37 @@ export default function GuessWho({players}) {
                     <td className={player.id === playerInfo.playerId ? styles.correctCell : styles.incorrectCell}>{player.name}</td>
                     <td className={player.team === playerInfo.team ? styles.correctCell : styles.incorrectCell}>
                       <div className={styles.entryImg}>
-                        <img
+                        <Image
                         src={`https://www-league.nhlstatic.com/images/logos/teams-current-primary-light/${player.teamId}.svg`}
                         alt="Player Team logo"
-                        height="30px"/>
+                        height={40}
+                        width={40}
+                        />
                         {player.team}
                       </div>
                     </td>
                     <td className={player.division === playerInfo.division ? styles.correctCell : styles.incorrectCell}>
                       <div className={styles.entryImg}>
-                        <img src={`/${player.division}.png`}   
+                        <Image src={`/${player.division}.png`}   
                         alt = "Player Division"
-                        height="30px"/>
+                        height={35}
+                        width={35}
+                        />
                         {player.division}
                       </div>
                     </td>
                     <td className={player.nationality === playerInfo.nationality ? styles.correctCell : styles.incorrectCell}>{player.nationality}</td>
                     <td className={Math.abs(player.number - playerInfo.number) > 7 ? styles.incorrectCell : (player.number == playerInfo.number ? styles.correctCell : styles.closeCell)}>
                       <div className={styles.numberCell}>
-                        {player.number < playerInfo.number && <img src="arrowUp.svg" height="25px"/>}
-                        {player.number > playerInfo.number && <img src="arrowDown.svg"  height="25px"/>}
+                        {player.number < playerInfo.number ? <Image src="arrowUp.svg" height={30} width={30} alt="arrow up"/> : ""}
+                        {player.number > playerInfo.number ? <Image src="arrowDown.svg"  height={30} width={30} alt="arrow down"/> : ""}
                         {player.number}
                       </div>
                     </td>
                     <td className={Math.abs(player.age - playerInfo.age) > 3 ? styles.incorrectCell : (player.age === playerInfo.age ? styles.correctCell : styles.closeCell)}>
                       <div className={styles.numberCell}>
-                        {player.age < playerInfo.age && <img src="arrowUp.svg"  height="25px"/>}
-                        {player.age > playerInfo.age && <img src="arrowDown.svg"  height="25px"/>}
+                        {player.age < playerInfo.age ? <Image src="arrowUp.svg"  height={30} width={30} alt="arrow up"/> : ""}
+                        {player.age > playerInfo.age ? <Image src="arrowDown.svg"  height={30} width={30} alt="arrow down"/> : ""}
                         {player.age}
                       </div>
                     </td>

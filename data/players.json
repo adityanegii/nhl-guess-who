@@ -175,11 +175,6 @@
         "teamId": 2
     },
     {
-        "name": "Josh Bailey",
-        "id": 8474573,
-        "teamId": 2
-    },
-    {
         "name": "Matt Martin",
         "id": 8474709,
         "teamId": 2
@@ -552,6 +547,11 @@
     {
         "name": "Dmitry Kulikov",
         "id": 8475179,
+        "teamId": 5
+    },
+    {
+        "name": "Reilly Smith",
+        "id": 8475191,
         "teamId": 5
     },
     {
@@ -1655,11 +1655,6 @@
         "teamId": 13
     },
     {
-        "name": "Corey Perry",
-        "id": 8470621,
-        "teamId": 14
-    },
-    {
         "name": "Brian Elliott",
         "id": 8470880,
         "teamId": 14
@@ -1895,6 +1890,11 @@
         "teamId": 15
     },
     {
+        "name": "Corey Perry",
+        "id": 8470621,
+        "teamId": 16
+    },
+    {
         "name": "Alex Stalock",
         "id": 8471774,
         "teamId": 16
@@ -1907,6 +1907,11 @@
     {
         "name": "Jonathan Toews",
         "id": 8473604,
+        "teamId": 16
+    },
+    {
+        "name": "Josh Bailey",
+        "id": 8474573,
         "teamId": 16
     },
     {
@@ -2112,6 +2117,16 @@
     {
         "name": "Matt Luff",
         "id": 8479644,
+        "teamId": 17
+    },
+    {
+        "name": "Kailer Yamamoto",
+        "id": 8479977,
+        "teamId": 17
+    },
+    {
+        "name": "Klim Kostin",
+        "id": 8480011,
         "teamId": 17
     },
     {
@@ -2762,16 +2777,6 @@
     {
         "name": "Stuart Skinner",
         "id": 8479973,
-        "teamId": 22
-    },
-    {
-        "name": "Kailer Yamamoto",
-        "id": 8479977,
-        "teamId": 22
-    },
-    {
-        "name": "Klim Kostin",
-        "id": 8480011,
         "teamId": 22
     },
     {
@@ -4072,11 +4077,6 @@
     {
         "name": "Brayden McNabb",
         "id": 8475188,
-        "teamId": 54
-    },
-    {
-        "name": "Reilly Smith",
-        "id": 8475191,
         "teamId": 54
     },
     {
