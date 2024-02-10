@@ -1,19 +1,19 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from '../styles/GuessWhoPopUp.module.css'
 import Link from 'next/link';
 import Image from 'next/image';
-import Router from 'next/router';
 
 export default function EndGamePopUp({props, playerInfo, page}) {
+    
     if (!props) {
         return (
             <div className={styles.popup}>
                 <Image 
-                src={`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${playerInfo.playerId}@2x.png`} 
+                src={`https://assets.nhle.com/mugs/nhl/20232024/${playerInfo.resp.teamAbbrev}/${playerInfo.resp.id}.png`} 
                 alt="player image"
                 height={175}
                 width={175} />
-            <h3>{playerInfo.name} was the answer!</h3>
+            <h3>{playerInfo.resp.name} was the answer!</h3>
             <div>
                 <Link href="/"><Image src="return.svg" alt="return button" height={40} width={40} /></Link>
                 <a href={page}><Image src='reload.svg' alt='reload button' height={40} width={40} /></a>
@@ -25,7 +25,7 @@ export default function EndGamePopUp({props, playerInfo, page}) {
         return (
             <div className={styles.popup}>
                 <Image 
-                src={`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${playerInfo.playerId}@2x.png`} 
+                src={`https://assets.nhle.com/mugs/nhl/20232024/${playerInfo.resp.teamAbbrev}/${playerInfo.resp.id}.png`} 
                 alt="player image"
                 height={175}
                 width={175} />

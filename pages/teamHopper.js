@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
-import { fetchPlayerIds, getRandomPlayerTeams, getGuessInfo } from '../helpers/helperFunctions'
+import { fetchPlayerIds, getRandomPlayerTeams, getGuessInfo } from './api/helperFunctions'
 import styles from '../styles/WhereWereYou.module.css'
 import EndGamePopUp from '../components/EndGamePopUp'
 import Script from 'next/script'
@@ -22,6 +22,8 @@ export default function TeamHopper() {
   const [filteredPlayers, setFilteredPlayers] = useState([]); // Players to show in dropdown
   const [interimGuess, setInterimGuess] = useState(''); // What is in text box
 
+  const [seasonsToShow, setSeasonsToShow] = useState([]); // [seasons to show]
+  
   const [won, setWon] = useState(false);
 
   useEffect(() => {
@@ -44,14 +46,18 @@ export default function TeamHopper() {
   }, []);
 
   useEffect(() => {
-      getRandomPlayerTeams(playerIds).then((playerInfo) => {
-        if (playerInfo!=null) {
-          console.log(playerInfo);
-          setPlayerInfo(playerInfo);
-          setMaxGuesses(playerInfo.seasons.length);
-          setSeasonsToShow(playerInfo.seasons.slice(0, numGuesses + 1));
+      fetch('api/getRandomPlayerTeams').then(response => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          throw new Error('Error: ' + response.status);
         }
-        });
+      }).then(playerInfo => {
+        console.log(playerInfo)
+        setPlayerInfo(playerInfo);
+        setMaxGuesses(playerInfo.resp.seasons.length);
+        setSeasonsToShow(playerInfo.resp.seasons.slice(0, numGuesses + 1));
+      });
   }, [playerIds]);
 
   useEffect(() => {
@@ -65,16 +71,36 @@ export default function TeamHopper() {
     }
   }, [interimGuess]);
 
+  useEffect(() => {
+    if (numGuesses > 1) {
+      setSeasonsToShow(playerInfo.resp.seasons.slice(0, numGuesses + 1));
+    }
+  }, [numGuesses]);
+
   const handleChange = (event) => {
     setInterimGuess(event.target.value);
   };
 
   const handleClick = (player) => {
+    console.log(playerInfo);
     setInterimGuess('');
-    getGuessInfo(player.id).then((guessInfo) => {
+    fetch('api/getGuessInfo', {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        playerId: player,
+      }),
+    }).then((response) => {
+      if (!response.ok) {
+        throw new Error('Could not retrieve guessed player info, try again');
+      }
+      return response.json();
+    }).then((guessInfo) => {
       setGuesses((prevGuesses) => [...prevGuesses, guessInfo]);
     })
-    if (player.id === playerInfo.playerId ) {
+    if (player.id === playerInfo.resp.id ) {
       setWon(true);
       var duration = 15 * 500;
       var animationEnd = Date.now() + duration;
@@ -117,11 +143,10 @@ export default function TeamHopper() {
     });
   };
 
-  const [seasonsToShow, setSeasonsToShow] = useState([]); // [seasons to show]
   useEffect(() => {
     if (playerInfo != null) {
       if (playerInfo.seasons != null){
-        setSeasonsToShow(playerInfo.seasons.slice(0, numGuesses + 1));
+        setSeasonsToShow(playerInfo.resp.seasons.slice(0, numGuesses + 1));
       }
     }
   }, [numGuesses]);
@@ -155,7 +180,7 @@ export default function TeamHopper() {
                   {filteredPlayers.map((player, index) => (
                     <div key={index} className={styles.dropdownRow} onClick={() => handleClick(player)}>
                       <Image
-                        src={`https://www-league.nhlstatic.com/images/logos/teams-current-primary-light/${player.teamId}.svg`}
+                        src={`https://assets.nhle.com/logos/nhl/svg/${player.teamAbbrev}_light.svg`}
                         alt="Player Team logo"
                         height={40}
                         width={40}
@@ -172,24 +197,24 @@ export default function TeamHopper() {
                     {
                       guesses.map((player, index) => (
                         <tr key={index}>
-                          <td className={player.id === playerInfo.playerId ? styles.correctCell : styles.incorrectCell}>
+                          <td className={player.id === playerInfo.resp.id ? styles.correctCell : styles.incorrectCell}>
                             <Image
-                            src={`https://cms.nhl.bamgrid.com/images/headshots/current/168x168/${player.playerId}@2x.png`}
+                            src={`https://assets.nhle.com/mugs/nhl/20232024/${player.teamAbbrev}/${player.id}.png`}
                             alt="Player Headshot"
                             height={50}
                             width={50}
                             />
                           </td>
-                          <td className={player.division === playerInfo.division ? styles.correctCell : styles.incorrectCell}>
+                          <td className={player.division === playerInfo.resp.division ? styles.correctCell : styles.incorrectCell}>
                             <Image src={`/${player.division}.png`} 
                             alt = "Player Division"
                             height={50}
                             width={50}
                             />
                           </td>
-                          <td className={player.team === playerInfo.team ? styles.correctCell : styles.incorrectCell}>
+                          <td className={player.teamAbbrev === playerInfo.resp.teamAbbrev ? styles.correctCell : styles.incorrectCell}>
                             <Image
-                            src={`https://www-league.nhlstatic.com/images/logos/teams-current-primary-light/${player.teamId}.svg`}
+                            src={`https://assets.nhle.com/logos/nhl/svg/${player.teamAbbrev}_light.svg`}
                             alt="Player Team logo"
                             height={50}
                             width={50}

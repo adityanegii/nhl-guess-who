@@ -1,29 +1,17 @@
 // Function to get players from NHL API, return array of JSON objects [name, id, teamId]
 export const fetchPlayerIds = async () => {
-    const response = await fetch("https://statsapi.web.nhl.com/api/v1/teams/");
-    const data = await response.json();
-    let teamIDs = data.teams.map((team) => team.id);
-  
-    let playerList = [];
-  
-    for (let i = 0; i < teamIDs.length; i++) {
-      const response = await fetch(
-        "https://statsapi.web.nhl.com/api/v1/teams/" + teamIDs[i] + "/roster"
-      );
-      const data = await response.json();
-      const roster = data.roster;
-  
-      roster.forEach((player) => {
-        const playerData = {
-          name: player.person.fullName,
-          id: player.person.id,
-          teamId: teamIDs[i]
-        };
-        playerList.push(playerData);
-      });
+    try {
+        const response = await fetch("https://api.nhle.com/stats/rest/en/skater/summary?limit=-1&sort=points&cayenneExp=seasonId=20232024");
+        const data = await response.json();
+        const playerIds = data.data.map(player => ({
+        name: player.skaterFullName,
+        id: player.playerId,
+        teamAbbrev: player.teamAbbrevs
+        }));
+    } catch (error) {
+        console.error('Error:', error);
+        return null;
     }
-    
-    return playerList;
   };
 
 // Function to choose random player, return JSON object with player info
@@ -31,22 +19,29 @@ export async function getRandomPlayerTeams(playerIDs) {
     if (playerIDs.length != 0) {
         const pIds = Array.from(playerIDs)
         const randomIndex = Math.floor(Math.random() * pIds.length);
-        const randomPlayer = await pIds[randomIndex];
+        // const randomPlayer = await pIds[randomIndex];
+        // console.log(randomPlayer);
         // const randomPlayer = 8470604;        // Jeff Carter
-        // const randomPlayer = 8473541;        // Jonathan Bernier
-        const response = await fetch("https://statsapi.web.nhl.com/api/v1/people/" + randomPlayer + "/stats?stats=yearByYear");
-        const data = await response.json();
-        let info = data.stats[0].splits;
+        const randomPlayer = 8473541;        // Jonathan Bernier
+        try {
+            const response = await fetch("https://api-web.nhle.com/v1/player/" + randomPlayer + "/landing");
+            const data = await response.json();
+            let info = data.seasonTotals;
+        } catch (error) {
+            console.error('Error:', error);
+            return null;
+        }
+
 
         // Extract only relevant information from JSON object
         const seasons = info.map(season => ({
         season: season.season,
-        team: season.team.name,
-        league: season.league.name,
-        gamesTotal: season.stat.games,
-        points: season.stat.points,
-        sA: season.stat.shotsAgainst,
-        gA: season.stat.goalsAgainst,
+        team: season.teamName.default,
+        league: season.leagueAbbrev,
+        gamesTotal: season.gamesPlayed,
+        points: season.points,
+        sA: season.shotsAgainst,
+        gA: season.goalsAgainst,
         }));
 
         // Turn object into array of JSON objects
@@ -55,7 +50,7 @@ export async function getRandomPlayerTeams(playerIDs) {
             value: seasons[key]
         }));
 
-        const desiredLeagues = ['National Hockey League', 'AHL', 'QMJHL', 'OHL', 'WHL', 'NL', 'NCAA', 'Liiga', 'KHL', 'Finland', 'Sweden', 'DEL']
+        const desiredLeagues = ['National Hockey League', 'AHL', 'QMJHL', 'OHL', 'WHL', 'NL', 'NCAA', 'Liiga', 'KHL', 'Finland', 'Sweden', 'DEL', 'Liiga']
         const filteredSeasons = seasonsArray.filter(obj => desiredLeagues.includes(obj.value.league));
 
         // Sort array by season, then league, then team
@@ -85,19 +80,21 @@ export async function getRandomPlayerTeams(playerIDs) {
         });
         
         // Aggregate the seasons for same teams
+        console.log(transformedData)
         const aggregatedData = aggregateTeamTotals(transformedData);
 
         // Get the player info
-        const playerInfoResponse = await fetch("https://statsapi.web.nhl.com/api/v1/people/" + randomPlayer);
+        const playerInfoResponse = await fetch("https://api-web.nhle.com/v1/player/" + randomPlayer + "/landing");
         const playerInfo = await playerInfoResponse.json();
 
         // Get division
-        const divisionResponse = await fetch("https://statsapi.web.nhl.com/api/v1/teams/");
-        const divisionData = await divisionResponse.json();
-        const division = divisionData.teams.filter(team => team.name === playerInfo.people[0].currentTeam.name)[0].division.name;
+        const standingsResponse = await fetch("https://api-web.nhle.com/v1/standings/now");
+        const standings = await standingsResponse.json().standings;
+        const division = standings.filter(team => team.teamAbbrev.default === playerInfo.currentTeamAbbrev).divisionName;
 
         const playerData = {
-            name: playerInfo.people[0].fullName,
+            fistname: playerInfo.firstName.default,
+            lastname: playerInfo.lastName.default,
             age: playerInfo.people[0].currentAge,
             nationality: playerInfo.people[0].nationality,
             shoots: playerInfo.people[0].shootsCatches,
@@ -150,13 +147,13 @@ const aggregateTeamTotals = playerData => {
 
 
 export async function getGuessInfo(playerId) {
-    const response = await fetch("https://statsapi.web.nhl.com/api/v1/people/" + playerId);
+    const response = await fetch("https://api-web.nhle.com/v1/player/" + playerId + "/landing");
     const data = await response.json();
 
     // Get division
-    const divisionResponse = await fetch("https://statsapi.web.nhl.com/api/v1/teams/");
-    const divisionData = await divisionResponse.json();
-    const division = divisionData.teams.filter(team => team.name === data.people[0].currentTeam.name)[0].division.name;
+    const standingsResponse = await fetch("https://api-web.nhle.com/v1/standings/now");
+    const standings = await standingsResponse.json().standings;
+    const division = standings.filter(team => team.teamAbbrev.default === playerInfo.currentTeamAbbrev).divisionName;
     const playerInfo = {
         name: data.people[0].fullName,
         age: data.people[0].currentAge,

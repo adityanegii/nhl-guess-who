@@ -7,7 +7,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: "cms.nhl.bamgrid.com"
+        hostname: "assets.nhle.com"
       }
     ]
   }

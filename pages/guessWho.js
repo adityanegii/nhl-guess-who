@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/GuessWho.module.css'
-import { getRandomPlayerTeams, getGuessInfo } from '../helpers/helperFunctions'
+import { getRandomPlayerTeams, getGuessInfo } from './api/helperFunctions'
 import { useEffect, useState } from 'react'
 import EndGamePopUp from '../components/EndGamePopUp'
 import Link from 'next/link'
@@ -44,11 +44,16 @@ export default function GuessWho({players}) {
   }, []);
 
   useEffect(() => {
-      getRandomPlayerTeams(playerIds).then((playerInfo) => {
-          setPlayerInfo(playerInfo);
-          console.log(playerInfo);
-      });
-  }, [playerIds]);
+    fetch('/api/getRandomPlayerTeams')
+        .then(response => response.json())
+        .then(data => {
+            setPlayerInfo(data);
+        })
+        .catch(error => {
+            console.error('Error fetching data:', error);
+        });
+}, [playerIds]);
+
 
   const handleChange = (event) => {
     setInterimGuess(event.target.value);
@@ -67,37 +72,49 @@ export default function GuessWho({players}) {
 
   const handleClick = (player) => {
     setInterimGuess('');
-    getGuessInfo(player.id).then((guessInfo) => {
-      setGuesses((prevGuesses) => [...prevGuesses, guessInfo]);
-    })
-    if (player.id === playerInfo.playerId ) {
-      setWon(true);
-
-      var duration = 15 * 500;
-      var animationEnd = Date.now() + duration;
-      var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
-
-      function randomInRange(min, max) {
-        return Math.random() * (max - min) + min;
+    fetch('api/getGuessInfo', {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        playerId: player,
+      }),
+    }).then(response => {
+      if (!response.ok) {
+        throw new Error('HTTP error: ' + response.status);
       }
+      return response.json();
+    }).then(guessInfo => {
+      setGuesses((prevGuesses) => [...prevGuesses, guessInfo]);
 
-      var interval = setInterval(function() {
-        var timeLeft = animationEnd - Date.now();
+      if (player.id === playerInfo.playerId) {
+        setWon(true);
 
-        if (timeLeft <= 0) {
-          return clearInterval(interval);
+        var duration = 15 * 500;
+        var animationEnd = Date.now() + duration;
+        var defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 }; 
+
+        function randomInRange(min, max) {
+          return Math.random() * (max - min) + min;
         }
-
-        var particleCount = 50 * (timeLeft / duration);
-        // since particles fall down, start a bit higher than random
-        confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
-        confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
-      }, 250);
-
-    } else {
-      setNumGuesses(numGuesses + 1);
-    }
-  };
+        var interval = setInterval(function() {
+          var timeLeft = animationEnd - Date.now();
+      
+          if (timeLeft <= 0) {
+            return clearInterval(interval);
+          }
+      
+          var particleCount = 50 * (timeLeft / duration);
+          // since particles fall down, start a bit higher than random
+          confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
+          confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
+        }, 250);
+      
+      } else {
+            setNumGuesses(numGuesses + 1);
+      }
+    })};
 
   const highlightMatchingText = (text, query) => {
     const regex = new RegExp(`(${query}|\\s+)`, 'gi');
@@ -136,7 +153,7 @@ export default function GuessWho({players}) {
 
       <section className= {styles.container}>
         <div className={styles.guess}>
-        {(numGuesses < 7 && won==false) && 
+        {(numGuesses < 1 && won==false) && 
           <div>
             <input type="text" id="guess" name="guess" onChange={handleChange} value={interimGuess} placeholder="Write a Player's Name"/>
             <div className={styles.dropdownContainer}>
@@ -144,7 +161,7 @@ export default function GuessWho({players}) {
                 {filteredPlayers.map((player, index) => (
                   <div key={index} className={styles.dropdownRow} onClick={() => handleClick(player)}>
                     <Image
-                      src={`https://www-league.nhlstatic.com/images/logos/teams-current-primary-light/${player.teamId}.svg`}
+                      src={`https://assets.nhle.com/logos/nhl/svg/${player.teamAbbrev}_light.svg`}
                       alt="Player Team logo"
                       height={40}
                       width={40}
@@ -156,7 +173,7 @@ export default function GuessWho({players}) {
             </div>
           </div>
         }
-        {(numGuesses == 7 || won==true) && <EndGamePopUp props={won} playerInfo={playerInfo} page="/guessWho" />}
+        {(numGuesses == 1 || won==true) && <EndGamePopUp props={won} playerInfo={playerInfo} page="/guessWho" />}
         </div>      
         
         {guesses.length > 0 && (
@@ -176,11 +193,11 @@ export default function GuessWho({players}) {
               <tbody>
                 {guesses.map((player, index) => (
                   <tr key={index}>
-                    <td className={player.id === playerInfo.playerId ? styles.correctCell : styles.incorrectCell}>{player.name}</td>
-                    <td className={player.team === playerInfo.team ? styles.correctCell : styles.incorrectCell}>
+                    <td className={player.id === playerInfo.resp.id ? styles.correctCell : styles.incorrectCell}>{player.name}</td>
+                    <td className={player.team === playerInfo.resp.team ? styles.correctCell : styles.incorrectCell}>
                       <div className={styles.entryImg}>
                         <Image
-                        src={`https://www-league.nhlstatic.com/images/logos/teams-current-primary-light/${player.teamId}.svg`}
+                        src={`https://assets.nhle.com/logos/nhl/svg/${player.teamAbbrev}_light.svg`}
                         alt="Player Team logo"
                         height={40}
                         width={40}
@@ -188,7 +205,7 @@ export default function GuessWho({players}) {
                         {player.team}
                       </div>
                     </td>
-                    <td className={player.division === playerInfo.division ? styles.correctCell : styles.incorrectCell}>
+                    <td className={player.division === playerInfo.resp.division ? styles.correctCell : styles.incorrectCell}>
                       <div className={styles.entryImg}>
                         <Image src={`/${player.division}.png`}   
                         alt = "Player Division"
@@ -198,22 +215,22 @@ export default function GuessWho({players}) {
                         {player.division}
                       </div>
                     </td>
-                    <td className={player.nationality === playerInfo.nationality ? styles.correctCell : styles.incorrectCell}>{player.nationality}</td>
-                    <td className={Math.abs(player.number - playerInfo.number) > 7 ? styles.incorrectCell : (player.number == playerInfo.number ? styles.correctCell : styles.closeCell)}>
+                    <td className={player.nationality === playerInfo.resp.nationality ? styles.correctCell : styles.incorrectCell}>{player.nationality}</td>
+                    <td className={Math.abs(player.number - playerInfo.resp.number) > 7 ? styles.incorrectCell : (player.number == playerInfo.resp.number ? styles.correctCell : styles.closeCell)}>
                       <div className={styles.numberCell}>
-                        {player.number < playerInfo.number ? <Image src="arrowUp.svg" height={30} width={30} alt="arrow up"/> : ""}
-                        {player.number > playerInfo.number ? <Image src="arrowDown.svg"  height={30} width={30} alt="arrow down"/> : ""}
+                        {player.number < playerInfo.resp.number ? <Image src="arrowUp.svg" height={30} width={30} alt="arrow up"/> : ""}
+                        {player.number > playerInfo.resp.number ? <Image src="arrowDown.svg"  height={30} width={30} alt="arrow down"/> : ""}
                         {player.number}
                       </div>
                     </td>
-                    <td className={Math.abs(player.age - playerInfo.age) > 3 ? styles.incorrectCell : (player.age === playerInfo.age ? styles.correctCell : styles.closeCell)}>
+                    <td className={Math.abs(player.age - playerInfo.resp.age) > 3 ? styles.incorrectCell : (player.age === playerInfo.resp.age ? styles.correctCell : styles.closeCell)}>
                       <div className={styles.numberCell}>
                         {player.age < playerInfo.age ? <Image src="arrowUp.svg"  height={30} width={30} alt="arrow up"/> : ""}
                         {player.age > playerInfo.age ? <Image src="arrowDown.svg"  height={30} width={30} alt="arrow down"/> : ""}
                         {player.age}
                       </div>
                     </td>
-                    <td className={player.position === playerInfo.position ? styles.correctCell : styles.incorrectCell}>{player.position}</td>
+                    <td className={player.position === playerInfo.resp.position ? styles.correctCell : styles.incorrectCell}>{player.position}</td>
                   </tr>
                 ))}
               </tbody>
